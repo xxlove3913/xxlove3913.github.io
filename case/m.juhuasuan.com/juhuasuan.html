@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/swiper.min.css" />
+
+<script>
+;(function(){
+	function change(){
+		document.documentElement.style.fontSize=document.documentElement.clientWidth/(320/20)+'px';
+	}
+	change();
+	window.addEventListener('resize',change,false);
+})();
+</script>
+</head>
+
+<body>
+	<header>
+    	<a href="#" class="back">返回</a>
+        <h1><a href="#">聚划算</a></h1>
+    </header>
+    
+	<div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/banner1.png"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner2.png"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner3.png"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner4.png"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner5.png"></a></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <script src="dist/js/swiper.min.js"></script>
+	<script>
+        var swiper = new Swiper('.swiper-container',{
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            loop:true,
+            autoplay:1000,
+            autoplayDisableOnInteraction:true
+        });
+    </script>
+    
+    <div class="classify">
+        <ul class="clearfix">
+            <li class="cla-item-1">
+                <a href="#">
+                    <span></span>
+                    <p>商品</p>
+                </a>
+            </li>
+            <li class="cla-item-2">
+                <a href="#">
+                    <span></span>
+                    <p>生活</p>
+                </a>
+            </li>
+            <li class="cla-item-3">
+                <a href="#">
+                    <span></span>
+                    <p>品牌</p>
+                </a>
+            </li>
+            <li class="cla-item-4">
+                <a href="#">
+                    <span></span>
+                    <p>聚宝盆</p>
+                </a>
+            </li>
+            <li class="cla-item-5">
+                <a href="#">
+                    <span></span>
+                    <p>聚名品</p>
+                </a>
+            </li>
+            <li class="cla-item-6">
+                <a href="#">
+                    <span></span>
+                    <p>聚家装</p>
+                </a>
+            </li>
+            <li class="cla-item-7">
+                <a href="#">
+                    <span></span>
+                    <p>聚透</p>
+                </a>
+                <b class="redHot"></b>
+            </li>
+            <li class="cla-item-8">
+                <a href="#">
+                    <span></span>
+                    <p>客户端</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section>
+        <div class="list">
+            <h2><span>聚划算热卖排行</span><i>TOP10</i></h2>
+            <ul>
+                <li class="clearfix">
+                    <div class="num num1 fl">1</div>
+                    <div class="shop fl"><img src="images/shop1.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>51</i></b></div>
+                </li>
+                <li class="clearfix">
+                    <div class="num num2 fl">2</div>
+                    <div class="shop fl"><img src="images/shop2.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>51</i></b></div>
+                </li>
+                <li class="clearfix">
+                    <div class="num num3 fl">3</div>
+                    <div class="shop fl"><img src="images/shop3.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>289</i></b></div>
+                </li>
+                <li class="clearfix">
+                    <div class="num num4 fl">4</div>
+                    <div class="shop fl"><img src="images/shop4.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>2.3</strong>折<b>￥<i>288</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>88</i></b></div>
+                </li>
+                <li class="clearfix">
+                    <div class="num num5 fl">5</div>
+                    <div class="shop fl"><img src="images/shop5.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>199</i></b></div>
+                </li>
+                <li class="clearfix">
+                    <div class="num num6 fl">6</div>
+                    <div class="shop fl"><img src="images/shop6.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>1.7</strong>折<b>￥<i>3299</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>588</i></b></div>
+                </li>
+                <li class="clearfix">
+                    <div class="num num7 fl">7</div>
+                    <div class="shop fl"><img src="images/shop7.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>6.3</strong>折<b>￥<i>7665</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>4599</i></b></div>
+                </li>
+                <li class="clearfix">
+                    <div class="num num8 fl">8</div>
+                    <div class="shop fl"><img src="images/shop8.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>51</i></b></div>
+                </li>
+                <li class="clearfix">
+                    <div class="num num9 fl">9</div>
+                    <div class="shop fl"><img src="images/shop9.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>2.3</strong>折<b>￥<i>439</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>129</i></b></div>
+                </li>
+                <li class="clearfix">
+                    <div class="num num10 fl">10</div>
+                    <div class="shop fl"><img src="images/shop10.png"></div>
+                    <div class="sold fl">
+                        <p>已售<span>68423</span></p>
+                        <p><strong>2.8</strong>折<b>￥<i>299</i></b></p>
+                    </div>
+                    <div class="nowPrice fr"><b>￥<i>9</i></b></div>
+                </li>
+                <li class="more"><a href="#">更多划算  逛起来！</a></li>
+            </ul>
+        </div>
+        <div class="goods">
+        	<div class="common clearfix">
+            	<div class="left fl"></div>
+                <ul class="fl clearfix">
+                    <li class="hot"><a href="#">服饰</a></li>
+                    <li><a href="#">配饰</a></li>
+                    <li><a href="#">美妆</a></li>
+                    <li><a href="#">鞋包</a></li>
+                    <li><a href="#">食品</a></li>
+                    <li class="hot"><a href="#">家居</a></li>
+                    <li><a href="#">运动</a></li>
+                    <li class="hot"><a href="#">电器</a></li>
+                    <li><a href="#">百货</a></li>
+                    <li><a href="#">母婴</a></li>
+                    <li><a href="#">数码</a></li>
+                    <li><a href="#">更多</a></li>
+                </ul>
+            </div>
+            <div class="more"><a href="#">精彩商品  逛起来！</a></div>
+        </div>
+        <div class="living">
+        	<div class="common clearfix">
+            	<div class="left fl"></div>
+                <ul class="fl clearfix">
+                    <li class="hot"><a href="#">美食</a></li>
+                    <li><a href="#">教育</a></li>
+                    <li><a href="#">酒店</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">生活服务</a></li>
+                    <li class="hot"><a href="#">卡券</a></li>
+                    <li><a href="#">摄影</a></li>
+                    <li class="hot"><a href="#">粮油生鲜</a></li>
+                    <li><a href="#">门票</a></li>
+                    <li><a href="#">休闲娱乐</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+			</div>             
+            <div class="more"><a href="#">品质生活  逛起来！</a></div>
+        </div>
+        <div class="brand">
+        	<div class="common clearfix">
+            	<div class="left fl"></div>
+                <ul class="fl clearfix">
+                    <li><a href="#">七匹狼</a></li>
+                    <li class="hot"><a href="#">粉红女...</a></li>
+                    <li><a href="#">卓诗尼</a></li>
+                    <li class="hot"><a href="#">收纳博士</a></li>
+                    <li><a href="#">惠氏</a></li>
+                    <li><a href="#">夏乐</a></li>
+                    <li><a href="#">帕克伦</a></li>
+                    <li><a href="#">古今</a></li>
+                    <li class="hot"><a href="#">九牧</a></li>
+                    <li><a href="#">诺奥</a></li>
+                    <li><a href="#">红豆</a></li>
+                    <li><a href="#">曼秀雷敦</a></li>
+            	</ul>
+            </div>
+            <div class="more"><a href="#">品牌折扣  逛起来！</a></div>
+        </div>
+        
+        <div class="template">
+        	<a href="#"><img src="images/template_ios.png"></a>
+            <a href="#"><img src="images/template_android.png"></a>
+            <a href="#"><img src="images/template_feedback.png"></a>
+        </div>
+	</section>
+    <footer>
+        <div class="loginC clearfix">
+        	<div class="login_bar fl clearfix">
+                <a href="#" class="login fl">登录</a>
+                <a href="#" class="register fl">注册</a>
+            </div>
+            <div class="backTop fr">TOP</div>
+        </div>
+        <div class="copyright">
+        	<p>
+            	<a href="#">标准版</a><a href="#">电脑版</a>
+            </p>
+            <p>&copy;2013&nbsp;浙B2-20080224&nbsp;&nbsp;服务中心</p>
+        </div>
+    </footer>
+</body>
+</html>

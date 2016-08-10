@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+.left{ float:left; width:245px; border:1px #e0dddd solid; display:inline}
+  h3{ clear:both; background:url(../images/h_bg.gif) repeat-x; height:30px; line-height:30px; font-size:14px; color:#0b22b0; padding-left:32px}
+  h3 span{ float:right; margin-top:9px; margin-right:10px}
+  p{ padding:10px; line-height:20px}
+  p img{ float:left; clear:both; margin:0 10px 0 0px}
+  .left ul{ list-style:none; margin:10px 10px 10px 10px}
+  .left  a{ color:#0b22b0; background:url(../images/sign_ourwork.gif) no-repeat 0 50%; padding-left:20px}
+  .left  a:hover{ color:#FB4C09}
+  .left ul li{ line-height:25px; padding-left:30px; border-bottom:1px #e0dddd dashed}
+  .left ul a span{ margin-left:10px}
+  .left ul.zhaopin li{ border-bottom:1px dashed #000}
+.right{ float:left; display:inline; padding-left:10px; width:728px}
+	h4{ font-weight:normal; border-bottom:4px #f17c00 solid; line-height:26px; text-align:right}
+	h5{ width:180px; height:40px; line-height:40px; background-color:#ec7c21; color:#FFF; font-size:24px; margin-top:50px; margin-left:30px; text-align:center}
+	p{ text-indent:20px}
+	.right a{ color:#782ea2}
+	p{ line-height:30px}
+	.right .yf{ padding:50px; margin-left:50px}
+	.designDisp{ padding:10px}
+	.right .yf li,.designDisp li{ margin-right:7px; margin-bottom:5px; font-size:14px; line-height:30px}
+	.designDisp li{ float:left}
+	.designDisp img{ border:#ccc solid 1px; padding:3px}
+	.right span{ display:block; text-align:center; font-size:12px; line-height:15px; padding-bottom:3px /*padding-top:5px; padding-bottom:10px*/}
+	p a{ color:#6e6e6e}
+p.d1{ background:#ededed; margin:10px 0; text-align:center}
+.footer{ line-height:15px; text-align:center}
+.footer p{ line-height:20px}

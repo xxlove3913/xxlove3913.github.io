@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+header{ height:2.25rem; line-height:2.25rem; background:#262626; display:-webkit-box; border-bottom:0.1rem solid #49caac;}
+header .logo{ font-size:1.25rem; color:#fcfcfc; -webkit-box-flex:1; text-align:center;}
+header .menu{ display:block; width:2.25rem; height:2.25rem; background:url(../images/menu_icon.png) no-repeat center center; background-size:1.45rem 1.15rem;}
+header .pc_icon{ display:block; width:2.25rem; height:2.25rem; background:url(../images/pc_icon.png) no-repeat center center; background-size:1.45rem 1.15rem;}
+
+.login_register{ height:2.05rem; line-height:2.05rem; background:#fafafa; display:-webkit-box; font-size:0.75rem;}
+.login_register a{ line-height:1.55rem; margin:0.25rem 0; display:block; -webkit-box-flex:1; text-align:center; padding-left:2rem;}
+.login_register .login{ background:url(../images/user_login_icon.png) no-repeat left 1.45rem center; background-size:1.45rem 1.5rem; border-right:1px solid #e6e6e6;}
+.login_register .register{ background:url(../images/user_register_icon.png) no-repeat left 1.45rem center; background-size:1.45rem 1.5rem;}
+
+.banner{ height:7.8rem; position:relative; }
+.banner .bannerPic{ display:block; height:7.8rem;}
+.banner .bannerPic img{ width:100%; height:7.8rem;}
+.banner .bannerDesc{ width:100%; height:1.85rem; line-height:1.85rem; font-size:0.75rem; color:#fcffff; background:#000; opacity:0.6; filter:alpha(opacity:60); position:absolute; bottom:0; text-align:center;}
+
+.list{ font-size:0.75rem; background:#fff;}
+.list ul li{ height:2rem; line-height:2rem; border-bottom:1px solid #ebebeb; margin:0 0.4rem;padding-left:0.3rem;}
+.list ul li:nth-last-child(1){ border:none;}
+
+.hotQA{ border-top:0.1rem solid #58c1b0; background:#fff;}
+.hotQA h3{ height:2rem; line-height:2rem; font-size:0.8rem; background:#fafafa; border-bottom:1px solid #e8e8e8; padding-left:0.75rem; position:relative;}
+.hotQA h3 a{ display:block; width:1.45rem; height:1.45rem; background:url(../images/more.png) no-repeat; background-size:1.45rem 1.45rem; position:absolute; right:0.75rem; top:50%; margin-top:-0.725rem;}
+.hotQA .content_title{ height:2.05rem; line-height:2.05rem; font-size:0.8rem; background:#fefefe; padding-left:0.75rem; border-bottom:1px solid #e5e5e5;}
+.hotQA .content_title li{ float:left; margin-right:1.65rem;}
+.hotQA .content_title li.ac{ /*border-bottom:0.1rem solid #d43553;*/}
+
+.content{ font-size:0.75rem; background:#fefefe;}
+.content ul li{ height:2rem; line-height:2rem; border-bottom:1px solid #eaeaea; margin:0 0.4rem; padding-left:0.3rem;}
+
+.backTop{ height:3rem; line-height:3rem; background:#fafafa; font-size:0.75rem; border-bottom:0.1rem solid #50cdab; text-align:center;}
+.backTop a{ display:block; width:5rem; background:url(../images/backToTop_icon.png) center no-repeat; background-size:1.45rem 1.45rem; padding-left:6rem;}

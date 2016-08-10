@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+<title>HEXAGONE</title>
+<link rel="stylesheet" href="css/base.css">
+<style>
+*{ margin:0; padding:0;}
+body{ font-family:Arial, Helvetica, sans-serif;}
+header{ height:3rem; background:#344a61; display:-webkit-box;}
+header .menu{ display:block; width:3rem; height:3rem; background:url(images/HEXAGONE_03.png) no-repeat center; background-size:0.8rem; border-right:1px solid #fff;}
+header .logo{ -webkit-box-flex:1; font-size:0.55rem;  color:#fff; text-align:center; line-height:3rem;}
+header .email{ display:block; width:3rem; height:3rem; background:url(images/HEXAGONE_06.png) no-repeat center; background-size:0.9rem 0.6rem; border-left:1px solid #fff;}
+
+
+section h2{ width:14rem; height:2.1rem; font-size:0.35rem; background:url(images/homepage_h.png) center left no-repeat; background-size:2.85rem 0.35rem; border-bottom:2px solid #e7e7e7; margin:0 1rem; }
+section .banner{ width:14rem; height:9.3rem; margin:1rem 1rem; position:relative;}
+section .banner img{ width:14rem; height:9.3rem;}
+section .banner .pre{ background:url(images/pre_icon.png) no-repeat; background-size:1.3rem 1.3rem; width:1.3rem; height:1.3rem; display:block; position:absolute; left:1rem; top:5.7rem;}
+section .banner .next{ background:url(images/next_icon.png) no-repeat; background-size:1.3rem 1.3rem; width:1.3rem; height:1.3rem; display:block; position:absolute; right:1rem; top:5.7rem;}
+
+section article{ padding:0 1rem 1rem 1rem; border-bottom:2px solid #e7e7e7;}
+section article h3{ font-size:0.65rem; font-weight:bold; height:1.15rem; line-height:1.15rem; margin-bottom:0.375rem;}
+section article p{ line-height:1rem; font-size:0.5rem;}
+
+section figure{ margin:0 1rem; font-size:0.5rem; padding-top:1rem;}
+section figure img{ display:block; margin-right:1rem; width:4rem; height:4rem;}
+section figcaption{ font-weight:bold; margin-top:2%}
+section figure p{ line-height:1rem; font-size:0.5rem; }
+section figure.se2{ padding-bottom:1rem; border-bottom:2px solid #e7e7e7;}
+section .work{ margin-top:1rem;}
+section .work h3{ margin:0 1rem; height:1rem; line-height:1rem; font-size:0.65rem; font-weight:bold; padding-bottom:0.375rem;}
+section .work p{ margin:0 1rem; line-height:1rem; font-size:0.5rem;}
+section .work ul{ padding-top:1rem;}
+section .work ul li{ margin-left:1rem; float:left; margin-bottom:1rem; display:inline-block;}
+section .work ul li img{ width:4rem; height:4rem;}
+section .sec1{ margin:0 1rem 1rem 1rem; padding-top:1rem; padding-bottom:1rem; border-bottom:2px solid #e7e7e7;  border-top:2px solid #e7e7e7;}
+section .sec1 h3{ height:1rem; line-height:1rem; font-size:0.65rem; font-weight:bold; padding-bottom:0.375rem;}
+section .sec1 p{ line-height:1rem; font-size:0.5rem;}
+section .sec1 .p1{ padding-bottom:1rem;}
+section .sec1 img{ width:4rem; height:4rem; margin-right:0.5rem; margin}
+section .sec1 .p2{ padding:1rem 1rem; margin-top:-0.5rem;}
+section .sec2{ margin:1rem 1rem; padding-bottom:1rem; border-bottom:2px solid #e7e7e7; text-align:center;}
+section .sec2 h3{ height:1rem; line-height:1rem; font-size:0.65rem; font-weight:bold; padding-bottom:0.375rem;}
+section .sec2 p{ line-height:1rem; padding-bottom:1rem; font-size:0.5rem;}
+section .sec2 ul{ display:-webkit-box;}
+section .sec2 ul li{ -webkit-box-flex:1;}
+
+section .sec3{ text-align:center; padding-bottom:1rem; font-size:0.4rem; color:#919191; line-height:1rem;}
+footer{ background:#000; text-align:center; padding-bottom:1rem; font-size:0.4rem; color:#919191;}
+footer ul{ padding:0.5rem 0.5rem 0 0.5rem; }
+footer ul li{ width:1rem; height:1rem;  float:left; margin-right:1rem; box-sizing:border-box;}
+footer ul li img{ width:1rem; height:1rem;}
+footer ul li:nth-child(2){ background:#2780b8;}
+footer ul li:nth-child(3){  background:#2780b8;}
+footer ul li:nth-child(4){  background:#26ad60;}
+footer ul li:nth-child(5){  background:#e67c26;}
+footer ul li:nth-child(6){  background:#9142ad;}
+footer ul li:nth-child(7){  background:#c43827;}
+footer ul li:nth-child(8){  background:#7b8d8f; margin-right:-1rem;}
+
+</style>
+<script>
+;(function(){
+	function change(){
+		var font=document.documentElement.clientWidth/(320/20); 
+		document.documentElement.style.fontSize=font+'px';
+	}
+	window.addEventListener('resize',change,false);
+	change();
+})();
+</script>
+</head>
+
+<body>
+	<header>
+    	<a href="#" class="menu"></a>
+        <h1 class="logo">HEXAGONE</h1>
+        <a href="#" class="email"></a>
+    </header>
+    
+    <section>
+    	<h2></h2>
+        <div class="banner">
+        	<ul>
+            	<li><a href="javascript:;"><img src="images/HEXAGONE_banner.png" alt=""></a></li>
+            </ul>
+            <a href="" class="pre"></a>
+            <a href="" class="next"></a>
+        </div>
+        <article>
+        	<h3>WELL,HELLO THERE!</h3>
+            <p>Honeycomb provides aunique design and a flat interface to make it stand out from the crowd!The nav is swipable,by dragging any part of the page to the right!Check it out yourself!</p>
+        </article>
+        <figure class="clearfix">
+        	<img class="fl" src="images/HEXAGONE_18.png">
+            <figcaption>EASY TO USE!</figcaption>
+            <p>There no point to complicate your life! We build products that are easy to use and customize!</p>
+        </figure>
+        <figure class="clearfix se2">
+        	<img class="fl" src="images/HEXAGONE_21.png">
+            <figcaption>EASY TO USE!</figcaption>
+            <p>There no point to complicate your life! We build products that are easy to use and customize!</p>
+        </figure>
+        <div class="work">
+        	<h3>SOME OF OUR WORKS!</h3>
+            <p>A gallery is essential inany template,so,if it's a mobile device,why not have a touch one!</p>
+            <ul class="clearfix">
+            	<li><a href="#"><img src="images/HEXAGONE_23.png"></a></li>
+                <li><a href="#"><img src="images/HEXAGONE_23.png"></a></li>
+                <li><a href="#"><img src="images/HEXAGONE_23.png"></a></li>
+                <li><a href="#"><img src="images/HEXAGONE_23.png"></a></li>
+                <li><a href="#"><img src="images/HEXAGONE_23.png"></a></li>
+                <li><a href="#"><img src="images/HEXAGONE_23.png"></a></li>
+            </ul>
+        </div>
+        <div class="sec1">
+        	<h3>TESTIMONIALS</h3>
+            <p class="p1">The testimonial slider is automatic,and it's drag enabled! Pretty awesome stuff! And it handles all kinds of variations!</p>
+            <img class="fl" src="images/HEXAGONE_38.png">
+            <p class="p2">Patience is key when building for quality and speed! We take care of every possible aspect!</p>
+        </div>
+        <div class="sec2">
+        	<h3>GET SOCIAL WITH US!</h3>
+            <p>Get news,updates,and just hang around for a chitchat or two on our social networks!</p>
+            <ul class="clearfix">
+            	<li><a href="#"><img src="images/HEXAGONE_42.png"></a></li>
+                <li><a href="#"><img src="images/HEXAGONE_44.png"></a></li>
+                <li><a href="#"><img src="images/HEXAGONE_46.png"></a></li>
+            </ul>
+        </div>
+        <div class="sec3">
+        	<p>COPYRIGHT 2013<br>allrights reserved</p>
+        </div>
+    </section>
+    <footer>
+    	<ul class="clearfix">
+        	<li><img src="images/HEXAGONE_52.png"></li>
+            <li><img src="images/HEXAGONE_54.png"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p>TAP THE ICONS TO CHANGE THE MENU STYLE!</p>
+    </footer>
+</body>
+</html>

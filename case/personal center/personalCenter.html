@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+;(function(){
+	function change(){
+		document.documentElement.style.fontSize=document.documentElement.clientWidth/(320/20)+'px';
+	}
+	change();
+	window.addEventListener('resize',change,false);
+})();
+</script>
+<script>
+	window.onload=function(){
+		var oInfo=document.querySelector('.info');
+		var oSpan=oInfo.querySelector('span');
+		oSpan.onclick=function(){
+			this.classList.toggle('on');	
+		}
+	}
+</script>
+</head>
+
+<body>
+	<header>
+    	<a href="#" class="back">返回</a>
+    	<h2>个人中心</h2>
+    </header>
+    
+    <div class="banner">
+    	<div class="headPic"></div>
+        <p class="nick fl">
+        --<b>凌乱</b><br>
+        ID<span>1271543621</span>
+        </p>
+        
+    </div>
+    
+    <nav>
+    	<ul class="clearfix">
+        	<li class="order"><a href="#">订单</a></li>
+            <li class="collection"><a href="#">收藏</a></li>
+            <li class="recommend"><a href="#">推荐</a></li>
+        </ul>
+    </nav>
+    
+    <div class="info">
+    	<ul>
+        	<li><a href="#">修改个人资料</a></li>
+            <li class="itemdis1"><a href="#">修改密码</a></li>
+            <li class="itemdis2"><a href="#">声音推送通知</a><span class="on"><b></b></span></li>
+            <li><a href="#">猜你喜欢</a></li>
+            <li><a href="#">附近热门</a></li>
+            <li><a href="#">推荐商家</a></li>
+            <li><a href="#">设置</a></li>
+        </ul>
+    </div>
+    
+    <div class="menu">
+    	<ul>
+        	<li class="home"><a href="#">首页</a></li>
+            <li class="shop"><a href="#">商家</a></li>
+            <li class="cart"><a href="#">购物车</a></li>
+            <li class="person"><a href="#">个人中心</a></li>
+        </ul>
+    </div>
+</body>
+</html>

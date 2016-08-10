@@ -1,0 +1,19 @@
+@charset "utf-8";
+*{margin:0; padding: 0;}
+body{ font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; font-size:14px; background: #ffff;}
+h1,h2,h3,h4,h5,h6,strong,b{ font-weight:normal; }
+em,i{ font-style: normal; }
+li{list-style: none;}
+a{ text-decoration:none; color:#2b2b2b; }
+img{ vertical-align:top; border:none; }
+.fl{ float:left; }
+.fr{ float:right; }
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.clearfix{
+	zoom:1;
+}
+.w{ width: 1024px; margin:0 auto; }

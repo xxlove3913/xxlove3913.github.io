@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+.main{ width:980px; margin:10px auto 0 auto; clear:both}
+.left{  width:310px; padding-left:10px; float:left}
+.display{ background:#F9C; height:240px; margin:10px 0}
+.linkcon,.infocon,.newscon,.classifycon{ border:#cccccc solid 1px}
+.linkcon p{ line-height:26px; padding:10px}
+.center{ width:420px; padding:0 10px; float:left}
+.infocon{ height:218px}
+.infocon p{ text-indent:20px; line-height:20px; padding:6px}
+.infocon p a{ color:#333}
+.infocon p a:hover{ color:#00C}
+.displaycon ul{ margin-top:10px}
+.displaycon ul li{ margin:0 3px 5px 3px; font-size:14px; line-height:30px; float:left}
+.displaycon ul li img{border:#ccc solid 1px; padding:3px}
+.displaycon span{ display:block; text-align:center; font-size:12px; line-height:15px; padding-bottom:3px}
+.right{ width:212px; padding-right:7px; height:500px; float:left }
+.newscon{ height:218px}
+.newscon ul,.classifycon ul{ padding:10px}
+.newscon ul li,.classifycon ul li{ border-bottom:#666 1px dashed}
+.newscon ul li a{ color:#666; background:url(../images/arrow.gif) no-repeat 0 50%; padding-left:10px; line-height:25px}
+.classifycon{ height:230px}
+.classifycon ul li a{ color:#666; background:url(../images/arrow_2.gif) no-repeat 0 50%; padding-left:15px; line-height:25px}

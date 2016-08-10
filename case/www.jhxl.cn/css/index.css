@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+.left{ float:left; width:320px}
+  h3{ clear:both; background:url(../images/h_bg.gif) repeat-x; height:30px; line-height:30px; font-size:14px; color:#0057b4; padding-left:32px}
+  h3 span{ float:right; margin-top:9px; margin-right:10px}
+  p{ padding:10px; line-height:20px}
+  p img{ float:left; clear:both; margin:0 10px 0 0px}
+  .left ul{ list-style:none; padding:10px 0 10px 15px}
+  .left ul a{ color:#454545; background:url(../images/sign.gif) no-repeat 0 50%; padding-left:10px}
+  .left ul a:hover{ color:#FB4C09}
+  .left ul li{ line-height:25px}
+  .left ul a span{ margin-left:10px}
+  .left ul.zhaopin li{ border-bottom:1px dashed #000}
+  h4{ color:#555555; font-size:14px; padding:10px 10px 0 10px; margin-left:10px}
+.right{ float:left; padding-left:10px; width:655px}
+.right a{ color:#782ea2}
+	.right ul{ padding:20px}
+	.right ul li{ float:left; display:inline-block; margin-right:10px}
+	h5{ background:url(../images/classicCase.gif) no-repeat left; height:15px; font-weight:normal; font-size:12px; padding-left:200px; padding-top:15px; margin-top:10px}
+	.content ul{  padding:20px}
+		.content ul li{  margin-right:7px; margin-bottom:5px; font-size:14px; line-height:30px; float:left}
+		.content ul li img{border:#ccc solid 1px; padding:3px}
+		.content ul li a{ }
+		.content span{ display:block; text-align:center; font-size:12px; line-height:15px; padding-bottom:3px}
+		
+		
+		
+.project{ width:985px; background:url(../images/project_bg.gif) no-repeat top center}
+.project a img{FILTER: }
+.project a:hover img{FILTER: gray;}
+.project ul{ margin-left:20px}
+.project ul li{ float:left; background:url(../images/sep.gif) no-repeat left 100%; height:113px; padding:80px 15px 15px 30px}
+.project span{ font-family:"方正综艺简体"; font-size:18px; display:block}
+p a{ color:#6e6e6e}
+p.d1{ background:#ededed; margin:10px 0; text-align:center}
+.footer{ line-height:15px; text-align:center}
+.footer p{ line-height:20px}
