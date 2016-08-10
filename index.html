@@ -2,217 +2,630 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>个人网站</title>
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/style.css">
-<style>
-
-</style>
-<script>
-	window.onload=function(){
-		var oBox=document.getElementById('progress');
-		var aLi=oBox.getElementsByTagName('li');
-
-		for(var i=0; i<aLi.length; i++){
-			aLi[i].onmouseover=function(){
-				var oDiv=this.children[1];
-				oDiv.style.transform='scale(1)';
-			}
-			aLi[i].onmouseout=function(){
-				var oDiv=this.children[1];
-				oDiv.style.transform='scale(0)';
-			}
-		}
-		
-		
-		function suctionTip(){
-			var oNav=document.querySelector('.nav')
-			var offsetT=oNav.offsetTop;
-			
-			window.onscroll=function(){
-				var scrollT=document.documentElement.scrollTop || document.body.scrollTop;
-				if(window.navigator.userAgent.toLowerCase().indexOf('msie 6.0')!=-1){
-					if(scrollT>=offsetT){
-						oNav.style.top=scrollT+'px';
-						oNav.style.position='absolute';
-					}else{
-						oNav.style.position='absolute';
-						oNav.style.paddingTop=80+'px';
-					}
-				}else{
-					if(scrollT>=offsetT){
-						oNav.style.position='fixed';	
-					}else{
-						oNav.style.position='absolute';
-						oNav.style.paddingTop=80+'px';
-					}
-				}
-			}	
-		}
-		suctionTip();
-
-		;(function(){
-			var oNav=document.getElementById('navCon');
-			var aNavList=oNav.children;
-			var oHead=document.getElementById('header');
-			var oAbout=document.getElementById('about');
-			var oSkill=document.getElementById('skill');
-			var oPro=document.getElementById('progress');
-			var arr=[oHead.offsetTop,oAbout.offsetTop,oSkill.offsetTop,oPro.offsetTop];
-			var timer=null;
-
-
-			for(var i=0; i<aNavList.length; i++){
-				;(function(index){
-					var oTop=arr[index];
-					aNavList[index].onclick=function(){
-						clearInterval(timer);
-						var start=(document.body.scrollTop || document.documentElement.scrollTop);
-						var dis=oTop-(start+80);
-						var iCount=parseInt(1000/30);
-						var n=0;
-
-						timer=setInterval(function(){
-							n++;
-							var a=1-n/iCount;
-							var cur=start+dis*(1-a*a*a*a);
-							document.body.scrollTop=document.documentElement.scrollTop=cur;
-
-						    if(n==iCount){
-						        clearInterval(timer);
-						    }
-						},30);
-					}
-				})(i);
-			}
-		})();
-
-	}
-
-	// for (var i = 0; i < oSt.length; i++) {
-	// 		;(function(index){
-	// 			var oTop = arr[index];
-				
-	// 			oSt[index].onclick = function(){
-	// 				clearInterval(timer);
-	// 				var start=document.body.scrollTop || document.documentElement.scrollTop;
-	// 				var dis=oTop-start;
-	// 				var iCount=parseInt(1000/30);
-	// 				var n=0;
-
-	// 				timer=setInterval(function(){
-	// 				    n++;
-	// 				    var a=1-n/iCount;
-	// 				    var cur=start+dis*(1-a*a*a*a);
-	// 				    document.body.scrollTop=document.documentElement.scrollTop=cur;
-
-	// 				    if(n==iCount){
-	// 				        clearInterval(timer);
-	// 				    }
-	// 				},30);
-	// 			}
-	// 		})(i);
-	// 	}
-</script>
+<title>小米官网——小米手机、红米手机和小米平板、小米电视官方正品销售网站</title>
+<link rel="stylesheet" type="text/css" href="css/basic.css">
+<link rel="stylesheet" type="text/css" href="css/xiaomi.css">
 </head>
 
 <body>
-	<div id="header" class="nav">		
-    	<ul class="w clearfix" id="navCon">
-        	<li><a href="javascript:;">HOME</a></li>
-            <li><a href="javascript:;">ABOUT</a></li>
-            <li><a href="javascript:;">SKILL</a></li>
-            <li><a href="javascript:;">PROGRESS</a></li>
-
-            <!-- <li><a href="#header">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skill">SKILL</a></li>
-            <li><a href="#progress">PROGRESS</a></li> -->
-        </ul>
-    </div>
-    <div class="banner">
-    	<div class="banner-info w clearfix">
-        	<div class="banner-left fl"></div>
-            <div class="banner-right fl">
-            	<h2>I'M MA JUNWEI</h2>
-                <div class="border"></div>
-                <h3>Web前端</h3>
+	<div class="top clearfix">
+        <div class="site-topbar fix clearfix">
+            <div class="topbar_l fl">
+                <ul class="clearfix">
+                    <li><a href="#">小米网</a></li>
+                    <li><a href="#">MIUI</a></li>
+                    <li><a href="#">米聊</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">多看阅读</a></li>
+                    <li><a href="#">云服务</a></li>
+                    <li><a href="#">小米网移动版</a></li>
+                    <li class="no_line"><a href="#">Select Region</a></li>
+                </ul>
+            </div>
+            <div class="loginbar fr">
+            	<ul class="clearfix">
+                	<li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="about" id="about">
-    	<div class="container w">
-        	<h3>ABOUT ME</h3>
-            <p>Dyin' ain't much of a livin', boy. here. put that in your report!" and "i may have found a way out of here. you want a guarantee, buy a toaster. here. put that in your report!" and "i may have found a way out of here. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. don't p!ss down my back and </p>
-        </div>
-    </div>
-    <div class="about-back"></div>
-    <div class="skill" id="skill">
-    	<div class="w">
-        	<h3>MY SKILLS</h3>
-        	<ul>
-                <li><span class="name">photoshop：</span><span class="scale scale1"></span><span class="num">80%</span></li>
-                <li><span class="name">html+css：</span><span class="scale scale2"></span><span class="num">80%</span></li>
-                <li><span class="name">javascript：</span><span class="scale scale3"></span><span class="num">60%</span></li>
-                <li><span class="name">html5+css3：</span><span class="scale scale4"></span><span class="num">60%</span></li>
-        	</ul>
-        </div>
-    </div>
-    <div class="myskill-back"></div>
     
-    <div id="progress">
-    	<h3>PROGRESS</h3>
-		<ul class="clearfix">
-			<li>
-				<a href="images/p1.jpg"><img src="images/p1.jpg"></a>
-				<div class="textbox">
-					<a href="case/HEXAGONE/HEXAGONE.html">
-                        <h4>HEXAGONE</h4>
-                        <p>WEB 移动端</p>
+    <div class="header fix clearfix">
+    	<h1 class="logo fl">小米网</h1>
+        <div class="shopping_cart fr">
+        	<a href="#">购物车</a>
+        </div>
+        <div class="search fr"><img src="images/mi_search.png" alt="" /></div>
+        <div class="time">11月18日预约开放购买</div>
+    </div>
+    
+    <div class="main fix clearfix">
+    	<div class="all_goods fl">
+        	<h2>全部商品分类</h2>
+            <ul>
+            	<li>
+                	<dl>
+                        <dt><a href="#">购买手机</a></dt>
+                        <dd>
+                            <a href="#">小米4</a>
+                            <a href="#">小米3</a>
+                            <a href="#">红米</a>
+                            <a href="#">红米Note</a>
+                        </dd>
+                    </dl>
+                </li>
+            	<li>
+                	<dl>
+                        <dt><a href="#">购买电视与平板</a></dt>
+                        <dd>
+                            <a href="#">小米电视</a>
+                            <a href="#">小米盒子</a>
+                            <a href="#">小米平板</a>
+                        </dd>
+                    </dl>
+                </li>
+            	<li>
+                	<dl>
+                        <dt><a href="#">后盖与个性化配件</a></dt>
+                        <dd>
+                            <a href="#">米键</a>
+                            <a href="#">后盖</a>
+                            <a href="#">贴纸</a>
+                            <a href="#">手机支架</a>
+                        </dd>
+                    </dl>
+                </li>
+            	<li>
+                	<dl>
+                        <dt><a href="#">保护套与贴膜</a></dt>
+                        <dd>
+                            <a href="#">保护套/保护壳</a>
+                            <a href="#">贴膜</a>
+                            <a href="#">防尘塞</a>
+                        </dd>
+                    </dl>
+                </li>
+            	<li>
+                	<dl>
+                        <dt><a href="#">移动电源与电池</a></dt>
+                        <dd>
+                            <a href="#">小米移动电源</a>
+                            <a href="#">电池</a>
+                            <a href="#">充电器</a>
+                        </dd>
+                    </dl>
+                </li>
+            	<li>
+                	<dl>
+                        <dt><a href="#">路由器与存储</a></dt>
+                        <dd>
+                            <a href="#">小米路由器</a>
+                            <a href="#">随身WiFi</a>
+                            <a href="#">存储卡</a>
+                        </dd>
+                    </dl>
+                </li>
+            	<li>
+                	<dl>
+                        <dt><a href="#">耳机与音箱</a></dt>
+                        <dd>
+                            <a href="#">小米活塞耳机</a>
+                            <a href="#">更多耳机</a>
+                            <a href="#">音箱</a>
+                        </dd>
+                    </dl>
+                </li>
+            	<li>
+                	<dl>
+                        <dt><a href="#">小米生活方式</a></dt>
+                        <dd>
+                            <a href="#">小米手环</a>
+                            <a href="#">小米服饰</a>
+                            <a href="#">米兔玩偶</a>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div class="main_left fl clearfix">
+            <ul class="nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">小米手机</a></li>
+                <li><a href="#">红米</a></li>
+                <li><a href="#">小米平板</a></li>
+                <li><a href="#">小米电视</a></li>
+                <li><a href="#">盒子</a></li>
+                <li><a href="#">路由器</a></li>
+                <li><a href="#">合约机</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+            <div class="banner">
+            	<img src="images/mi_banner.png" alt="" />
+                <ul class="focus_number clearfix">
+                	<li><b>1</b><em></em></li>
+                    <li><b>2</b><em></em></li>
+                    <li><b>3</b><em></em></li>
+                    <li><b>4</b><em></em></li>
+                </ul>
+            </div>
+            <div class="hot">
+            	<ul class="clearfix">
+                	<li><a href="#"><img src="images/mi_hot01.png" alt="" /></a></li>
+                    <li><a href="#"><img src="images/mi_hot02.png" alt="" /></a></li>
+                    <li><a href="#"><img src="images/mi_hot03.png" alt="" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!--小米明星产品 start-->
+    <div class="starSingle fix">
+        <div class="title clearfix">
+            <h2 class="fl">小米明星单品</h2>
+            <span class="fl">根据机型选配件</span>
+            <i class="arrow fr"><a href="#" class="info"></a><a href="#" class="back"></a></i>
+        </div>
+        <ul class="clearfix">
+        	<li>
+            	<a href="#"><img src="images/mi_dianyuan.png" alt="" /></a>
+                <dl>
+                	<dt><a href="#">1040mAh小米移动电源</a></dt>
+                    <dd><a href="#">全铝合金金属外壳，LG/三星等优质电芯</a></dd>
+                </dl>
+            </li>
+           <li>
+            	<a href="#"><img src="images/mi_box.png" alt="" /></a>
+                <dl>
+                	<dt><a href="#">小米盒子新上市</a></dt>
+                    <dd><a href="#">4K网络机顶盒，随时看海量高清网络电影、电视剧</a></dd>
+                </dl>
+            </li>
+             <li class="no_border">
+            	<a href="#"><img src="images/mi_pingban.png" alt="" /></a>
+                <dl>
+                	<dt><a href="#">四核2.2GHz处理器，7.9英寸视网膜屏</a></dt>
+                    <dd><a href="#">全铝合金金属外壳，LG/三星等优质电芯</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <!--小米明星产品 end-->
+    
+    <!--新品上架 start-->
+    <div class="newProduct fix">
+        <div class="title clearfix">
+            <h2 class="fl">新品上架</h2>
+            <a href="#" class="more fr">更多&gt;</a>
+        </div>
+        <div class="new clearfix">
+        	<div class="new_left fl">
+            	<div class="iHealth">
+                	<h3>iHealth知能血压计</h3>
+                    <span>父母在家一点就测 测量结果云端同步</span>
+                    <strong>199元</strong>
+                </div>
+                <div class="clearfix">
+                    <div class="new_r_l fl">
+                        <dl>
+                        	<dt>大人物米兔圆领套头卫衣</dt>
+                            <dd>
+                            	<strong>99元</strong>
+                                <em>129元</em>
+                            </dd>
+                        </dl>
+                        <div class="free_shipping">包邮</div>
+                    </div>
+                    <div class="new_r_r fl">
+                        <div class="new_r_r1 ">
+                        	<dl>
+                        	<dt>QCY运动蓝牙耳机</dt>
+                            <dd>
+                            	<strong>129元</strong>
+                            </dd>
+                        </dl>
+                        </div>
+                        <div class="new_r_r2 ">
+                        	<dl>
+                                <dt>小米手机二合一镜头</dt>
+                                <dd>
+                                    <strong>59元</strong>
+                                </dd>
+                        	</dl>
+                        </div>
+                    </div>
+            	</div>
+                <div class="new_bottom clearfix">
+                    <div class="new_b_l fl">
+                        <dl>
+                        	<dt>铁三角CLR100耳机</dt>
+                            <dd>
+                            	<strong>118元</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="new_b_r fl">
+                        <dl>
+                            <dt>红米至简翻盖支架保护套</dt>
+                            <dd>
+                                <strong>49元</strong>
+                            </dd>
+                        </dl>
+                    </div>
+            	</div>
+            </div>
+            <div class="new_right fl">
+            	<ul class="new_r_ul">
+                	<li class="clearfix">
+                    	 <dl class="fl">
+                         	<dt><a href="#">红米3D月球系列…</a></dt>
+                            <dd>
+                            	<strong><i>29元<i><b>39元</b></strong>
+                                <span>上午十点开始秒杀</span>
+                            </dd>
+                         </dl>
+                         <div class="pic fr"><img src="images/mi_46.png" alt="" /></div>
+                    </li>
+                    <li class="clearfix">
+                    	 <dl class="fl">
+                         	<dt><a href="#">特惠配件套装</a></dt>
+                            <dd>
+                            	<strong>手机必备配件组合购买</strong>
+                                <span>实惠更优惠</span>
+                            </dd>
+                         </dl>
+                         <div class="pic fr"><img src="images/mi_48.png" alt="" /></div>
+                    </li>
+                    <li class="clearfix">
+                    	 <dl class="fl">
+                         	<dt><a href="#">我爱酷玩</a></dt>
+                            <dd>
+                            	<strong>邂逅炫酷的电子产品</strong>
+                                <span>结交趣味相投的朋友</span>
+                            </dd>
+                         </dl>
+                         <div class="pic fr"><img src="images/mi_50.png" alt="" /></div>
+                    </li>
+                    <li>
+                    	<h4>话费充值</h4>
+                        <div class="tel"><input type="text" name="tel" value="请输入手机号" /></div>
+                        <div class="price">
+                        	<select>
+                            	<option>30元</option>
+                                <option>50元</option>
+                                <option selected="selected">100元</option>
+                                <option>200元</option>
+                            </select>
+                        </div>
+                        <div class="total">实付价格：98.4元起</div>
+                        <div class="button"><input type="button" name="button" value="立即充值" /></div>
+                    </li>
+                </ul>
+                <div class="news">
+                    <h4>新闻公告</h4>
+                        <ul>
+                            <li><a href="#">企业用户采购通道</a><i>&gt;</i></li>
+                            <li><a href="#">小米手机防伪查询</a><i>&gt;</i></li>
+                            <li><a href="#">小米手机官翻版</a><i>&gt;</i></li>
+                            <li class="no_border"><a href="#">小米3（ 64GB ）购机用户补偿</a><i>&gt;</i></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--新品上架 end-->
+    
+    <!--大家都喜欢 start-->
+    <div class="allLike fix">
+        <div class="title clearfix">
+            <h2 class="fl">大家都喜欢</h2>
+        </div>
+        <div class="all_like clearfix">
+        	<div class="like_left fl">
+            	<div class="hot">
+                	<h3>小米T恤换季特卖</h3>
+                    <span>舒适纯棉面料 多色经典团案</span>
+                    <strong>全场29元</strong>
+                </div>
+                <div class="like_bottom clearfix">
+                    <div class="like_b_l fl">
+                        <dl>
+                        	<dt>先锋SE-MJ512折叠式头戴耳机</dt>
+                            <dd>
+                            	<strong>168元</strong>
+                            </dd>
+                        </dl>
+                  </div>
+                    <div class="like_b_r fl">
+                        <dl>
+                            <dt>红米高透防划贴膜（单片装）</dt>
+                            <dd>
+                                <strong>9.9元</strong>
+                            </dd>
+                        </dl>
+                    </div>
+           	  </div>
+            </div>
+            <div class="like_right fl">
+            	<ul>
+                	<li><h4><strong>HOT</strong>热销商品排行</h4></li>
+                    <li class="clearfix">
+                    	<span class="num fl">1</span>
+                        <span class="cont fl">
+                        	<a href="#">5200mAh移动电源</a>
+                            <i>49元</i>
+                        </span>
+                        <div class="fr"><img src="images/mi_hot_01.png" alt="" /></div>
+                    </li>
+                    <li class="clearfix">
+                    	<span class="num fl">2</span>
+                        <span class="cont fl">
+                        	<a href="#">米键</a>
+                            <i>4.9元</i>
+                        </span>
+                        <div class="fr"><img src="images/mi_hot_02.png" alt="" /></div>
+                    </li>
+                    <li class="clearfix">
+                    	<span class="num fl">3</span>
+                        <span class="cont fl">
+                        	<a href="#">小蜜蜂手机支架</a>
+                            <i>19元</i>
+                        </span>
+                        <div class="fr"><img src="images/mi_hot_03.png" alt="" /></div>
+                    </li>
+                    <li class="clearfix">
+                    	<span class="num_gray fl">4</span>
+                        <span class="cont fl">
+                        	<a href="#">JSB数据线120cm</a>
+                            <i>15元</i>
+                        </span>
+                        <div class="fr"><img src="images/mi_hot_04.png" alt="" /></div>
+                    </li>
+                    <li class="clearfix">
+                    	<span class="num_gray fl">5</span>
+                        <span class="cont fl">
+                        	<a href="#">八爪鱼相机支架</a>
+                            <i>48元</i>
+                        </span>
+                        <div class="fr"><img src="images/mi_hot_05.png" alt="" /></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--大家都喜欢 end-->
+    
+    <!--热评产品 start-->
+    <div class="hotReview fix">
+        <div class="title clearfix">
+            <h2 class="fl">热评产品</h2>
+        </div>
+        <ul class="clearfix">
+        	<li>
+            	<h4><a href="#">红米色彩主题</a></h4>
+                <div class="starLevel clearfix"><span class="star"></span><span class="sepLine"></span><span class="count">1231人好评</span></div>
+                <div class="price">39元</div>
+                <div class="img"><img src="images/mi_hotReview01.png" alt="" /></div>
+                <div class="describe">后盖图案非常好看，不愧是官方出品，和机型严丝合缝很赞！<i></i></div>
+            </li>
+           <li>
+            	<h4><a href="#">遥控飞行球</a></h4>
+                <div class="starLevel clearfix"><span class="star star-0"></span><span class="sepLine"></span><span class="count">660人好评</span></div>
+                <div class="price">130元</div>
+                <div class="img"><img src="images/mi_hotReview02.png" alt="" /></div>
+                <div class="describe">后盖图案非常好看，不愧是官方出品，和机型严丝合缝很赞！<i></i></div>
+            </li>
+             <li class="no_border">
+            	<h4><a href="#">小米商务真皮钱包</a></h4>
+                <div class="starLevel clearfix"><span class="star"></span><span class="sepLine"></span><span class="count">3164人好评</span></div>
+                <div class="price">159元</div>
+                <div class="img"><img src="images/mi_hotReview03.png" alt="" /></div>
+                <div class="describe">后盖图案非常好看，不愧是官方出品，和机型严丝合缝很赞！<i></i></div>
+            </li>
+        </ul>
+    </div>
+    <!--热评产品 end-->
+    
+    <!--特价产品 start-->
+    <div class="specialProducts fix">
+        <div class="title clearfix">
+            <h2 class="fl">特价产品</h2>
+        </div>
+        <ul class="clearfix">
+        	<li>
+                <dl>
+                    <dt>SanDisk 32GB储存卡</dt>
+                    <dd>
+                        <strong>89元</strong>
+                        <em>100元</em>
+                    </dd>
+                </dl>
+                <div class="img">
+                	<img src="images/mi_card.png" alt="" />
+                </div>
+                <div class="save">省20元</div>
+            </li>
+           <li>
+                <dl>
+                    <dt>红米保护套装</dt>
+                    <dd>
+                        <strong>40元</strong>
+                        <em>68元</em>
+                    </dd>
+                </dl>
+                <div class="img">
+                	<img src="images/mi_smartCover.png" alt="" />
+                </div>
+                <div class="save">省28元</div>
+            </li>
+             <li class="no_border">
+                <dl>
+                    <dt>大电池全能套装</dt>
+                    <dd>
+                        <strong>129元</strong>
+                        <em>178元</em>
+                    </dd>
+                </dl>
+                <div class="img">
+                	<img src="images/mi_battery.png" alt="" />
+                </div>
+                <div class="save">省49元</div>
+            </li>
+        </ul>
+    </div>
+    <!--特价产品 end-->
+    
+    <!--多看图书 start-->
+    <div class="hotReview fix">
+        <div class="title clearfix">
+            <h2 class="fl">多看图书</h2>
+            <a href="#" class="more fr">更多&gt;</a>
+        </div>
+        <ul class="clearfix">
+        	<li>
+            	<h4><a href="#">《参与感：小米口碑营销内部手册》</a></h4>
+                <div class="starLevel clearfix">黎万强（小米联合创始人）</div>
+                <div class="price">9.9元</div>
+                <div class="img"><img src="images/mi_read01.png" alt="" /></div>
+                <div class="describe">后盖图案非常好看，不愧是官方出品，和机型严丝合缝很赞！<i></i></div>
+            </li>
+           <li>
+            	<h4><a href="#">《万万没想到：生活才是喜剧》</a></h4>
+                <div class="starLevel clearfix">有时右逝 叫兽易小星</div>
+                <div class="price">3.99元</div>
+                <div class="img"><img src="images/mi_read02.png" alt="" /></div>
+                <div class="describe">后盖图案非常好看，不愧是官方出品，和机型严丝合缝很赞！<i></i></div>
+            </li>
+             <li class="no_border">
+            	<h4><a href="#">《雪球专刊：美女为何爱渣男》</a></h4>
+                <div class="starLevel clearfix">雪球用户</div>
+                <div class="price">免费</div>
+                <div class="img"><img src="images/mi_read03.png" alt="" /></div>
+                <div class="describe">后盖图案非常好看，不愧是官方出品，和机型严丝合缝很赞！<i></i></div>
+            </li>
+        </ul>
+    </div>
+    <!--多看图书 end-->
+    
+    <div class="other fix">
+    	<ul class="clearfix">
+        	<li>
+            	<dl>
+                	<dt><a href="#">光棍节想脱单吗？告白字体0元起</a></dt>
+                    <dd>6米币</dd>
+                </dl>
+                <div class="img"><img src="images/mi_other01.png" alt="" /></div>
+            </li>
+            <li>
+            	<dl>
+                	<dt><a href="#">无所不能</a></dt>
+                    <dd>6米币</dd>
+                </dl>
+                <div class="img"><img src="images/mi_other02.png" alt="" /></div>
+            </li>
+            <li class="no_border">
+            	<dl>
+                	<dt><a href="#">6色</a></dt>
+                    <dd>6米币</dd>
+                </dl>
+                <div class="img"><img src="images/mi_other03.png" alt="" /></div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="site_footer">
+        <div class="footer_service fix">
+            <ul class="clearfix">
+                <li>
+                    <a href="#" class="clearfix">
+                        <div class="img"><img src="images/mi_service_01.png" alt="" /></div>
+                        <div class="txt">1小时快修服务</div>
                     </a>
-				</div>
-			</li>
-			<li>
-				<a href="images/p2.jpg"><img src="images/p2.jpg"></a>
-				<div class="textbox">
-                    <a href="case/m.juhuasuan.com/juhuasuan.html">
-                        <h4>聚划算</h4>
-						<p>WEB 移动端</p>
+                </li>
+                <li>
+                    <a href="#" class="clearfix">
+                        <div class="img"><img src="images/mi_service_02.png" alt="" /></div>
+                        <div class="txt">7天无理由退货</div>
                     </a>
-				</div>
-			</li>
-			<li>
-				<a href="images/p3.jpg"><img src="images/p3.jpg"></a>
-				<div class="textbox">
-                	<a href="case/personal center/personalCenter.html">
-                        <h4>个人中心</h4>
-						<p>WEB 移动端</p>
+                </li>
+                <li>
+                    <a href="#" class="clearfix">
+                        <div class="img"><img src="images/mi_service_03.png" alt="" /></div>
+                        <div class="txt">15天免费换货</div>
                     </a>
-				</div>
-			</li>
-			<li>
-				<a href="images/p4.jpg"><img src="images/p4.jpg"></a>
-				<div class="textbox">
-					<h4>Project Name</h4>
-					<p>WEB DESIGN</p>
-				</div>
-			</li>
-			<li>
-				<a href="images/p5.jpg"><img src="images/p5.jpg"></a>
-				<div class="textbox">
-					<h4>Project Name</h4>
-					<p>WEB DESIGN</p>
-				</div>
-			</li>
-			<li>
-				<a href="images/p6.jpg"><img src="images/p6.jpg"></a>
-				<div class="textbox">
-					<h4>Project Name</h4>
-					<p>WEB DESIGN</p>
-				</div>
-			</li>
-		</ul>
-	</div>
-    <div class="footer">Copyright © 2016.mySite By me</div>
+                </li>
+                <li>
+                    <a href="#" class="clearfix">
+                        <div class="img"><img src="images/mi_service_04.png" alt="" /></div>
+                        <div class="txt">满150元包邮</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clearfix">
+                        <div class="img"><img src="images/mi_service_05.png" alt="" /></div>
+                        <div class="txt">520余家售后网点</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_link fix clearfix">
+        	<dl>
+            	<dt><a href="#">帮助中心</a></dt>
+                <dd><a href="#">购物指南</a></dd>
+                <dd><a href="#">支付方式</a></dd>
+                <dd><a href="#">配送方式</a></dd>
+            </dl>
+            <dl>
+            	<dt><a href="#">服务支持</a></dt>
+                <dd><a href="#">售后政策</a></dd>
+                <dd><a href="#">自助服务</a></dd>
+                <dd><a href="#">相关下载</a></dd>
+            </dl>
+            <dl>
+            	<dt><a href="#">小米之家</a></dt>
+                <dd><a href="#">小米之家</a></dd>
+                <dd><a href="#">服务网点</a></dd>
+                <dd><a href="#">预约亲临到店服务</a></dd>
+            </dl>
+            <dl>
+            	<dt><a href="#">关于小米</a></dt>
+                <dd><a href="#">了解小米</a></dd>
+                <dd><a href="#">加入小米</a></dd>
+                <dd><a href="#">联系我们</a></dd>
+            </dl>
+            <dl>
+            	<dt><a href="#">关注我们</a></dt>
+                <dd><a href="#">新浪微博</a></dd>
+                <dd><a href="#">小米部落</a></dd>
+                <dd><a href="#">官方微信</a></dd>
+            </dl>
+            <div class="linkus">
+            	<span>400-100-5678</span>
+                <i>周一至周日8:00-18:00</i>
+                <i>（仅收市话）</i>
+                <a href="#">24小时在线客服</a>
+            </div>
+        </div>
+        <div class="foot fix clearfix">
+        	<div class="foot_info fl">
+            	<p>小米旗下网站:小米网|MIUI|米聊|多看书城|小米路由器|小米后院|小米天猫店|小米淘宝直营店|小米网盟|问题反馈|Select Region</p>
+                <p>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号</p>
+            </div>
+            <div class="language fr">
+            	<select>
+                	<option selected="selected">简体中文</option>
+                    <option>英文</option>
+                    <option>日文</option>
+                </select>
+            </div>
+        </div>
+        <ul class="foot_bottom fix clearfix">
+        	<li><a href="#"><img src="images/mi_foot01.png" alt="" /></a></li>
+            <li><a href="#"><img src="images/mi_foot02.png" alt="" /></a></li>
+            <li><a href="#"><img src="images/mi_foot03.png" alt="" /></a></li>
+        </ul>
+    </div>
+    
 </body>
 </html>
