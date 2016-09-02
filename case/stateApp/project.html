@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css"  />
+		<link rel="stylesheet" href="css/style.css"  />
+		<script>
+			;(function(){
+				function change(){
+					document.documentElement.style.fontSize=document.documentElement.clientWidth/(320/20)+"px";
+				}
+				change();
+				window.addEventListener("resize",change,false);
+			})();
+		</script>
+		<script>
+			window.onload=function(){
+				var oUl=document.querySelector("#list ul");
+				var aLi=oUl.children;
+				var con=document.querySelector(".popPage");
+				var aClose=document.querySelectorAll(".close");
+				
+				var conLi=document.querySelectorAll(".popCon");
+				for(var i=0; i<aLi.length; i++){
+					
+					aLi[i].index=i;
+					
+					aLi[i].onclick=function(){
+						for(var i=0; i<aLi.length; i++){
+							conLi[i].style.opacity=0;
+							conLi[i].style.zIndex=-1;
+							conLi[i].style.webkitTransition="all 1s ease";
+						}
+						conLi[this.index].style.opacity=0.9;
+						conLi[this.index].style.zIndex=1;
+						conLi[this.index].style.webkitTransition="all 1s ease";
+					}
+					aClose[i].onclick=function(){
+						this.parentNode.style.opacity=0;
+						this.parentNode.style.zIndex=-1;
+					}
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<section id="project">
+			<h3><div></div><span>更新至2016年1月20日</span></h3>
+			<div class="search_bar clearfix">
+				<input type="text" name="keyword" class="keyword fl" placeholder="请输入项目名称和关键词" />
+				<input type="button" value="点击查询" class="search_btn fl" />
+			</div>
+			<menu id="list" class="list">
+				<ul>
+					<li>房地产经纪人</li>
+					<li>注册税务师</li>
+					<li>质量专业技术人员</li>
+					<li>土地登记代理人</li>
+					<li>矿产权评估师</li>
+					<li>国际商务专业人员</li>
+					<li>注册资产评估师</li>
+					<li>企业法律顾问</li>
+					<li>建筑业企业项目经理</li>
+					<li>水利工程质量与安全监督员</li>
+					<li>品牌管理师</li>
+					<li>土地估价师资格</li>
+				</ul>
+			</menu>
+			<footer class="footer">
+				<a href="/">下载国务院客户端</a>
+			</footer>
+			<div class="popPage">
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>房地产经纪人</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>注册税务师</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>质量专业技术人员</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>土地登记代理人</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>矿产权评估师</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>国际商务专业人员</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>注册资产评估师</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>企业法律顾问</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>建筑业企业项目经理</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>水利工程质量与安全监督员</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>品牌管理师</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="popCon">
+					<a href="javascript:;" class="close"></a>
+					<div>
+						<p></p>
+						<dl>
+							<dt>项目名称：</dt>
+							<dd>土地估价师资格</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+							<dt>实施部门（单位）：</dt>
+							<dd>住房城乡建设部</dd>
+							<dt>其他共同实施部门：</dt>
+							<dd>人力资源社会保障部</dd>
+							<dt>资格类别：</dt>
+							<dd>无</dd>
+							<dt>处理决定：</dt>
+							<dd>取消</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

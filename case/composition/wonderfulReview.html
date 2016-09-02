@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+window.onload=function(){
+	var oDt=document.getElementById("dt");
+	var oSlide=document.getElementById("slide");
+	var aSlide=oSlide.getElementsByTagName("li");
+	var oBtn=document.getElementById("focus");
+	var aBtn=oBtn.getElementsByTagName("li");
+	var oDd=document.getElementById("dd");
+	var aLi=oDd.getElementsByTagName("li");
+	
+	var iNow=0;
+	var timer=null;
+	
+	for(var i=0; i<aBtn.length; i++){
+		aBtn[i].index=i;
+		aBtn[i].onmouseover=function(){
+			iNow=this.index;
+			tab();
+		}
+	}
+	
+	for(var i=0; i<aLi.length; i++){
+		aLi[i].index=i;
+		aLi[i].onmouseover=function(){
+			iNow=this.index;
+			tab();	
+		}	
+	}
+	
+	function tab(){
+		for(var i=0; i<aBtn.length; i++){
+			aBtn[i].className="";
+			aLi[i].className="";
+		}
+		aBtn[iNow].className="ac";
+		aLi[iNow].className="on";
+		oSlide.style.top=-(aSlide[iNow].offsetHeight)*iNow+"px";
+	}
+	function next(){
+		iNow++;
+		if(iNow==aBtn.length){
+			iNow=0;	
+		}
+		tab();
+	}
+	timer=setInterval(next,1000);
+	oDt.onmouseover=oDd.onmouseover=function(){
+		clearInterval(timer);	
+	}
+	oDt.onmouseout=oDd.onmouseout=function(){
+		timer=setInterval(next,1000);	
+	}	
+}
+</script>
+
+</head>
+
+<body>
+	<div class="header">
+    	<div class="banner">
+        </div>
+        <div class="nav">
+        	<ul class="w">
+            	<li><a href="composition.html">决赛盛况</a></li>
+                <li><a href="awardCeremony.html">颁奖典礼</a></li>
+                <li class="ac"><a href="wonderfulReview.html">精彩回顾</a></li>
+                <li class="no_space"><a href="#">历年决赛</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--/header-->
+    <div class="content">
+    	<div class="w">
+        	<div class="info wonderful_info clearfix">
+            	<dl class="fl">
+                    <dt id="dt">
+                    	<ul id="slide">
+                        	<li><img src="images/wonderful_1.png"></li>
+                            <li><img src="images/wonderful_2.png"></li>
+                            <li><img src="images/wonderful_3.png"></li>
+                            <li><img src="images/wonderful_4.png"></li>
+                            <li><img src="images/wonderful_5.png"></li>
+                        </ul>
+                        <ol id="focus">
+                        	<li class="ac"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </dt>
+                    <dd id="dd">
+                    	<ul class="clearfix">
+                        	<li class="on"><img src="images/wonderful_01.png"><a href="javascript:;"></a></li>
+                            <li><img src="images/wonderful_02.png"><a href="javascript:;"></a></li>
+                            <li><img src="images/wonderful_03.png"><a href="javascript:;"></a></li>
+                            <li><img src="images/wonderful_04.png"><a href="javascript:;"></a></li>
+                            <li id="no_space"><img src="images/wonderful_05.png"><a href="javascript:;"></a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <div class="joinus wonJoinus fr">
+                	<p class="title">2016“格伦杯”方洲新概念全国中小学生创意作文大赛</p>
+                    <p class="impo">自由表达&nbsp;创意先行</p>
+                    <div>
+                    	<img src="images/two_code.png">
+                        <p>扫描二维码<br>关注创意作文大赛官方微信</p>
+                    </div>
+                    <p class="dec">加入我们共同探索创意写作的神秘地域</p>
+                </div>
+            </div>
+            <!--/info-->
+            
+            <div class="day common">
+                <h3><strong><b>Day 1</b><span>现场签到+启动仪式</span></strong></h3>
+                <ul class="clearfix">
+                	<li class="dayPic1"><img src="images/wonderful_23.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic3"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                </ul>
+                <ul class="ul2 clearfix">
+                	<li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li class="no_space"><img src="images/wonderful_24.png"></li>
+                </ul>
+            </div>
+            <!--/day-->
+            <div class="day common">
+                <h3><strong><b>Day 1</b><span>现场签到+启动仪式</span></strong></h3>
+                <ul class="clearfix">
+                	<li class="dayPic1"><img src="images/wonderful_23.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic3"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                </ul>
+                <ul class="ul2 clearfix">
+                	<li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li class="no_space"><img src="images/wonderful_24.png"></li>
+                </ul>
+            </div>
+            <!--/day-->
+            <div class="day common">
+                <h3><strong><b>Day 1</b><span>现场签到+启动仪式</span></strong></h3>
+                <ul class="clearfix">
+                	<li class="dayPic1"><img src="images/wonderful_23.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic3"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                </ul>
+                <ul class="ul2 clearfix">
+                	<li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li class="no_space"><img src="images/wonderful_24.png"></li>
+                </ul>
+            </div>
+            <!--/day-->
+            <div class="day common">
+                <h3><strong><b>Day 1</b><span>现场签到+启动仪式</span></strong></h3>
+                <ul class="clearfix">
+                	<li class="dayPic1"><img src="images/wonderful_23.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic3"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                </ul>
+                <ul class="ul2 clearfix">
+                	<li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li class="no_space"><img src="images/wonderful_24.png"></li>
+                </ul>
+            </div>
+            <!--/day-->
+            <div class="day common">
+                <h3><strong><b>Day 1</b><span>现场签到+启动仪式</span></strong></h3>
+                <ul class="clearfix">
+                	<li class="dayPic1"><img src="images/wonderful_23.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic3"><img src="images/wonderful_24.png"></li>
+                    <li class="dayPic2"><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                </ul>
+                <ul class="ul2 clearfix">
+                	<li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li><img src="images/wonderful_24.png"></li>
+                    <li class="no_space"><img src="images/wonderful_24.png"></li>
+                </ul>
+            </div>
+            <!--/day-->
+        </div>
+    </div>
+    <!--/content-->
+    
+    <div class="footer footer_bg">
+    	<ul class="w">
+        	<li>Copyright 2010-2012 北京格伦国际教育科技有限公司 版权所有</li>
+            <li>Glen International Education(www.gelunjiaoyu.com) All Rights Reserved</li>
+            <li>京ICP备13003633号-4&nbsp;&nbsp;<a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <!--/footer-->
+</body>
+</html>

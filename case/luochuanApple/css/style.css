@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+.banner{ width:100%; height:6.7rem; position:relative;}
+.swiper-container { width:100%; height:6.7rem;}
+.swiper-container img{ height:6.7rem;}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	
+	/* Center slide text vertically */
+	
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.classify{ padding-top:1rem; font-size:0.6rem;}
+.classify ul{ }
+.classify ul li{ float:left; width:calc(25%); position:relative;}
+.classify ul li .redHot{ width:0.25rem; height:0.25rem; background:#d51938; border-radius:50%; position:absolute; left:0.8rem; bottom:0.6rem;}
+.classify a{ display:block; color:#999; width:2rem; padding-top:0.5rem; margin:0 auto;}
+.classify a span{ display:block; width:2rem; height:2rem; }
+.classify .cla-item-1 a span{background:url(../images/intro_15.png) no-repeat;  -webkit-background-size:100%;}
+.classify .cla-item-2 a span{background:url(../images/intro_17.png) no-repeat;  -webkit-background-size:100%;}
+.classify .cla-item-3 a span{background:url(../images/intro_19.png) no-repeat;  -webkit-background-size:100%;}
+.classify .cla-item-4 a span{background:url(../images/intro_21.png) no-repeat;  -webkit-background-size:100%;}
+.classify .cla-item-5 a span{background:url(../images/intro_30.png) no-repeat;  -webkit-background-size:100%;}
+.classify .cla-item-6 a span{background:url(../images/intro_31.png) no-repeat;  -webkit-background-size:100%;}
+.classify .cla-item-7 a span{background:url(../images/intro_32.png) no-repeat;  -webkit-background-size:100%;}
+.classify .cla-item-8 a span{background:url(../images/intro_33.png) no-repeat;  -webkit-background-size:100%;}
+.classify a p{ text-align:center; line-height:1.5rem;}
+
+section{ min-width:15rem; margin:0 0.5rem; }
+.list{ }
+.list h2{ line-height:1.8rem; padding-top:0.4rem; border-bottom:0.05rem solid #dcdcdc; color:#333; font-size:0.7rem; font-family:'方正兰亭黑简体';}
+.list h2 span{ border-left:0.1rem solid #d51938; padding-left:0.45rem;}
+.list h2 i{ float:right;}
+.list ul{ padding-top:0.75rem;}
+.list ul li{ height:3rem; background:#f4f4f4; margin-bottom:0.5rem;}
+.list ul li .num{ width:1.5rem; height:3rem; line-height:3rem; font-size:1.2rem; font-weight:bold; color:#fff; text-align:center; background:#e00202;}
+.list ul li .num2{ background:#ff4800;}
+.list ul li .num3{ background:#ff7300;}
+.list ul li .num4{ background:#ff9d00;}
+.list ul li .num5{ background:#ffa800;}
+.list ul li .num6{ background:#ffb400;}
+.list ul li .num7{ background:#ffba00;}
+.list ul li .num8{ background:#fcd000;}
+.list ul li .num9{ background:#ffd719;}
+.list ul li .num10{ background:#ffe152;}
+.list ul li .shop{ width:4.5rem; height:3rem;}
+.list ul li .shop img{ width:100%; height:100%;}
+.list ul li .sold{ font-size:0.6rem; color:#999; height:0.9rem; line-height:0.9rem; margin-top:0.6rem; margin-left:0.5rem;}
+.list ul li .sold strong{ color:#c7223d;}
+.list ul li .sold b{ margin-left:0.5rem;}
+.list ul li .sold i{ text-decoration:line-through;}
+.list ul li .nowPrice{ font-size:0.8rem; color:#d51938; background:url(../images/arrow.png) no-repeat right center; -webkit-background-size:0.35rem 0.55rem; padding-right:0.5rem; margin-right:0.5rem; margin-top:1rem;}
+.list ul li .nowPrice b{ font-weight:bold;}
+.list ul li.more{ height:2rem; line-height:2rem; text-align:center; font-size:0.7rem;}
+
+.goods{ width:100%;}
+.comm{ width:100%;}
+
+.goods .common .left{ width:3.75rem; height:8.8rem; background:url(../images/goods.png) no-repeat; -webkit-background-size:100%;}
+.living .common .left{ width:3.75rem; height:8.8rem; background:url(../images/Living-group.png) no-repeat; -webkit-background-size:100%;}
+.brand .common .left{ width:3.75rem; height:8.8rem; background:url(../images/Brand-group.png) no-repeat; -webkit-background-size:100%;}
+.common ul{ width:11.25rem; height:8.8rem; box-sizing:border-box; border-right:1px solid #eee; border-bottom:1px solid #eee;}
+.common li{ width:calc(100%/3); height:2.2rem; line-height:2.2rem; text-align:center; float:left; display:inline-block; border:1px solid #eee; box-sizing:border-box; font-size:0.6rem; border-right:none; border-bottom:none;}
+
+.more{ height:2.2rem; line-height:2.2rem; text-align:center; font-size:0.7rem; background:#f5f5f5 url(../images/arrow.png) no-repeat right 0.5rem center; -webkit-background-size:0.35rem 0.55rem; margin-top:0.5rem; margin-bottom:0.775rem;}
+
+.template{ display:-webkit-box; -webkit-box-pack:center;}
+.template a{ height:4rem; -webkit-box-flex:1; }
+.template a img{ height:4rem; display:block;}
+
+footer{ background:#f8f8f8; font-size:0.7rem; margin-top:0.45rem;}
+footer .loginC{ height:2.2rem; line-height:2.2rem;}
+footer .loginC a{ color:#333;}
+footer .login_bar{ margin-left:0.75rem;}
+footer .login{ margin-right:1.2rem;}
+footer .backTop{ background:url(../images/arrowTop.png) no-repeat right 0.7rem center; background-size:0.45rem 0.25rem; padding-right:1.6rem;}
+footer .copyright{ background:#eee; padding-top:0.75rem;}
+footer .copyright a{ font-size:0.7rem; color:#333; margin-right:0.65rem;}
+footer .copyright p{ text-align:center; color:#999; line-height:1.5rem;}

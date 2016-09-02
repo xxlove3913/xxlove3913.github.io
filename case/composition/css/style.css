@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+.header{ width:100%; min-width:1200px;}
+.header .banner{ width:100%; height:500px; background:url(../images/banner_01.jpg) center no-repeat;}
+.header .nav{ height:70px; line-height:70px; background:#131313; font-size:20px; color:#fff;}
+.header .nav ul li{ float:left; display:inline;width:205px; height:46px; padding:12px 0; margin-right:128px; line-height:46px; text-align:center;}
+.header .nav ul li.ac a{ background:#3dc0a0;}
+.header .nav ul li.no_space{ margin-right:-128px;}
+.header .nav ul a{ display:block; color:#fff; }
+.header .nav ul a:hover{ background:#3dc0a0;}
+
+.content{ width:100%; margin-top:10px;}
+.info{}
+.info dl{ width:930px;}
+.info dl dt{ width:930px; height:450px; position:relative; overflow:hidden;}
+.info dl dt ul{ width:930px; height:450px; position:absolute; top:0;}
+.info dl dt ul li{width:930px; height:450px;}
+.info dl dt ol{ position:absolute; left:50%; bottom:20px; margin-left:-42px;}
+.info dl dt ol li{ width:12px; height:12px; border-radius:50%; background:#a0a0a0; float:left; display:inline; margin-right:16px;}
+.info dl dt ol li.ac{ background:#fff;}
+.info dl dd{}
+.info dl dd p{ padding:8px 0 5px 20px; width:700px; height:57px; font-size:18px;}
+.info .joinus{ width:260px; height:520px; background:#3dc0a0;}
+.info .joinus .title{ padding:0 15px; color:#fff; text-align:center; line-height:20px; margin-top:12px;}
+.info .joinus .impo{ font-family:"华文行楷"; font-size:28px; color:#ebf832; height:44px; line-height:44px; text-align:center;}
+.info .joinus div{ margin-top:40px; text-align:center; color:#ebf832; line-height:20px;}
+.info .joinus div p{ margin-top:25px;}
+.info .joinus .dec{ padding:0 24px; color:#fff9ff; margin-top:30px;}
+
+.guest{ width:100%;}
+.guest h3{ text-align:center; margin:45px 0 30px 0;}
+.guest h3 span{ display:block; font-family:Arial, Helvetica, sans-serif;}
+.guest h3 b{ display:block; font-family:"方正兰亭特黑_GBK"; font-size:38px;}
+
+.guest .rotate{ height:362px; position:relative;}
+.rotate .pre{ display:block; width:25px; height:85px; background:url(../images/arrow.png) no-repeat; position:absolute; left:10px; top:172px;}
+.rotate .next{ display:block; width:25px; height:85px; background:url(../images/arrow.png) -25px 0 no-repeat; position:absolute; right:10px; top:172px;}
+
+.rotate ul{ height:362px;}
+.rotate ul li dd p{/* text-overflow:ellipsis;  overflow:hidden;*/}
+.rotate ul li.item_01{ width:211px; position:absolute; left:50px; top:35px;}
+.rotate ul li.item1 dt img{ width:211px; height:209px;}
+.rotate ul li.item1 dd{ height:81px; background:#fff; border:1px solid #cdcdcd; text-align:center;}
+.rotate ul li.item1 dd h4{ font-size:14px; margin-top:4px;}
+.rotate ul li.item1 dd p{ font-size:14px; color:#606060; text-align:left; padding:0 6px;}
+
+.rotate ul li.item_02{ width:232px; position:absolute; left:242px; top:20px; z-index:1;}
+.rotate ul li.item2 dt img{ width:232px; height:229px;}
+.rotate ul li.item2 dd{ height:89px; background:#fff; border:1px solid #cdcdcd; text-align:center;}
+.rotate ul li.item2 dd h4{ font-size:16px; margin-top:16px;}
+.rotate ul li.item2 dd p{ font-size:14px; color:#606060; padding:0 6px;}
+
+.rotate ul li.item_03{ width:264px; position:absolute; left:464px; z-index:2;}
+.rotate ul li.item_03 dd{ height:101px; background:#fff; border:1px solid #cdcdcd; text-align:center;}
+.rotate ul li.item_03 dd h4{ font-size:18px; margin-top:18px;}
+.rotate ul li.item_03 dd p{ font-size:16px; color:#606060; padding:0 6px;}
+
+.rotate ul li.item_04{ width:232px; position:absolute; left:727px; top:20px; z-index:1}
+.rotate ul li.item_04 dd p{ text-align:left;}
+.rotate ul li.item_05{ width:211px; position:absolute; left:934px; top:35px;}
+.rotate ul li.item_05 dd h4{ font-size:14px; margin-top:16px;}
+.rotate ul li.item_05 dd p{ font-size:12px; color:#606060; padding:0 6px; text-align:center;}
+
+.catalog{ width:100%; margin-top:35px;}
+.common h3{ border-bottom:1px solid #000; text-align:center; margin-bottom:30px;}
+.common strong{ border-bottom:5px solid #000; width:440px; height:62px; line-height:62px; display:block; margin:0 auto;}
+.common strong b{ font-family:"方正兰亭特黑_GBK"; font-size:30px;}
+.common strong span{ margin-left:20px; font-family:Humnst777 Lt BT; font-size:36px; }
+.catalog ul li{ width:385px; text-align:center; float:left; display:inline; margin:0 22px 30px 0;}
+.catalog ul li p{ padding:16px 0 18px 0; border-bottom:1px dashed #000;}
+.catalog ul li.no_space{ margin-right:-22px;}
+
+.day1{ width:100%;}
+.day1 ul li{ margin-bottom:20px; padding-bottom:20px; border-bottom:1px dashed #2f2f2f;}
+.day1 ul li dl{ width:725px; padding:10px 20px 0 35px;}
+.day1 ul li dl dt{ font-size:20px; line-height:38px;}
+.day1 ul li dl dd p{ text-indent:32px; line-height:32px; color:#565656;}
+.day1 a{ color:#40b958;}
+
+.common ol li{ padding-bottom:21px; margin-bottom:20px; border-bottom:1px dashed #2f2f2f;}
+.common ol li .num{ width:20px; font-family:"方正粗书宋简体"; font-size:38px; font-weight:bold; font-style:italic; text-align:center;}
+.common ol li .headPic{ width:120px; height:120px; background:#cbcbcb; margin-left:10px;}
+.common ol li dl{ width:1010px; padding:0 20px;}
+.common ol li dl dt{ font-size:18px; line-height:40px;}
+.common ol li dl dd{ color:#545454; line-height:30px;}
+
+.day2{ width:100%; margin-top:30px;}
+.day2_comm .msg{ padding-bottom:20px; border-bottom:1px dashed #2f2f2f;}
+.day2_comm .msg dl{ width:775px; padding:0 10px 0 30px;}
+.day2_comm .msg dl dt{ font-size:20px; line-height:38px;}
+.day2_comm .msg dl dd p{ text-indent:32px; line-height:32px; color:#565656;}
+.day2_comm a{ color:#40b958;}
+.day2_comm ul{ margin-top:30px;}
+.day2_comm ul li{ width:385px; float:left; display:inline; margin-right:20px; border-bottom:1px dashed #2f2f2f;}
+.day2_comm ul li p{ height:50px; line-height:50px; text-align:center;}
+.day2_comm ul li.no_space{ margin-right:-22px;}
+
+.day3{ width:100%; margin-top:32px;}
+.day3 ul{ border-bottom:1px dashed #2f2f2f; margin-bottom:20px;}
+.day3 ul li{ width:580px; float:left; display:inline; margin-right:39px;}
+.day3 ul li p{ height:55px; line-height:55px; text-align:center;}
+.day3 ul li.no_space{ margin-right:-39px;}
+.day3 a{ color:#40b958;}
+
+.day4{ width:100%; margin-top:12px;}
+.day5{ width:100%; margin-top:32px;}
+/*--------------------颁奖典礼--------------------------*/
+.ceremony{ margin-top:27px; font-family:"微软雅黑";}
+.ceremony p a{ color:#40b958;}
+.ceremony_common h3{ border-bottom:1px solid #000; font-family:"方正兰亭特黑简体"; font-size:34px;}
+.ceremony_common h3 strong{ display:block; width:270px; height:54px; line-height:54px; border-bottom:5px solid #000; letter-spacing:4px;}
+.ceremony_common ul li{ border-bottom:1px dashed #000;}
+.ceremony_common ul h4{ line-height:58px; padding-top:5px;}
+.ceremony_common ul h4 em{ font-family:"方正小标宋简体"; font-size:38px; line-height:26px; font-style:italic; color:#de2f34; display:inline-block; margin-right:10px;}
+.ceremony_common ul h4 em.num2{ color:#ff9500;}
+.ceremony_common ul h4 em.num3{ color:#ff5600;}
+.ceremony_common ul h4 span{ font-family:"微软雅黑"; font-weight:bold;}
+.commendAward ul p{ color:#5a5a5a; text-indent:32px; line-height:30px;}
+.commendAward ul dl{ background:url(../images/icon_bg.png) no-repeat left top; margin-top:20px; padding-bottom:12px;}
+.commendAward ul dl dt{ padding-left:50px; font-family:"微软雅黑"; font-weight:bold; height:18px; margin-bottom:8px;}
+.commendAward ul dl dd{ text-indent:50px; line-height:30px; color:#5a5a5a;}
+.commendAward ul dl dd p{ color:#5a5a5a; text-indent:50px; line-height:30px;}
+
+.specialAward,.firstPrize,.secondPrize,.thirdPrize{ margin-top:40px;}
+.special_common ul div{ margin-bottom:12px;}
+.special_common ul a{ float:left; display:inline; margin-right:90px; color:#2c2c2c; line-height:30px;}
+
+/*--------------------精彩回顾--------------------------*/
+.wonderful_info{ }
+.wonderful_info dd{ margin-top:5px;}
+.wonderful_info dd ul li{ float:left; display:inline; margin-right:20px; position:relative;}
+.wonderful_info dd ul li.on a{ width:170px; height:82px; position:absolute; left:0; background:url(../images/border_bg.png) no-repeat;}
+
+.wonderful_info dd ul li#no_space{ margin-right:-20px;}
+.wonderful_info .wonJoinus{ height:537px; background:#3cc05b;}
+
+.day{ margin-top:32px;}
+.day ul li{ float:left; display:inline;}
+.day ul li.dayPic1{ width:597px; height:326px; margin-right:10px;}
+.day ul li.dayPic2{ width:292px; height:160px; margin-bottom:6px; margin-right:9px;}
+.day ul li.dayPic3{ width:292px; height:160px; margin-bottom:6px;}
+.day ul.ul2 li{ margin-right:9px;}
+.day ul.ul2 li.no_space{ margin-right:0px; margin-left:4px;}
+
+
+.footer{ width:100%; color:#d1d1d1; text-align:center; margin-top:40px; min-width:1200px;}
+.footer_bg{ background:#332f30; margin-top:50px;}
+.footer ul{ height:67px; padding:25px 0;}
+.footer ul li{ line-height:20px;}
+.footer ul li a{ color:#d1d1d1;}
+.footer ul li a:hover{ color:#666;}
+
