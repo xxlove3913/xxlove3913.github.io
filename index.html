@@ -2,331 +2,378 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>个人网站</title>
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/style.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>个人主页</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap_site.css">
 <link rel="stylesheet" href="css/animate.css">
-
-<style>
-
-</style>
-<script src="js/jquery-1.7.2.js"></script>
-<script src="js/js.js"></script>
-<script>
-	$(function(){
-		$("#about p").addClass("animated bounceInUp");		
-	})
-</script>
-<script>
-	window.onload=function(){
-		var oBox=document.getElementById('progress');
-		var aLi=oBox.getElementsByTagName('li');
-
-		for(var i=0; i<aLi.length; i++){
-			aLi[i].onmouseover=function(){
-				var oDiv=this.children[1];
-				oDiv.style.transform='scale(1)';
-			}
-			aLi[i].onmouseout=function(){
-				var oDiv=this.children[1];
-				oDiv.style.transform='scale(0)';
-			}
-		}
-		
-		
-		function suctionTip(){
-			var oNav=document.querySelector('.nav')
-			var offsetT=oNav.offsetTop;
-			
-			window.onscroll=function(){
-				var scrollT=document.documentElement.scrollTop || document.body.scrollTop;
-				if(window.navigator.userAgent.toLowerCase().indexOf('msie 6.0')!=-1){
-					if(scrollT>=offsetT){
-						oNav.style.top=scrollT+'px';
-						oNav.style.position='absolute';
-					}else{
-						oNav.style.position='absolute';
-						oNav.style.paddingTop=80+'px';
-					}
-				}else{
-					if(scrollT>=offsetT){
-						oNav.style.position='fixed';	
-					}else{
-						oNav.style.position='absolute';
-						oNav.style.paddingTop=80+'px';
-					}
-				}
-			}	
-		}
-		suctionTip();
-
-		;(function(){
-			var oNav=document.getElementById('navCon');
-			var aNavList=oNav.children;
-			var oHead=document.getElementById('header');
-			var oAbout=document.getElementById('about');
-			var oSkill=document.getElementById('skill');
-			var oPro=document.getElementById('progress');
-			var arr=[oHead.offsetTop,oAbout.offsetTop,oSkill.offsetTop,oPro.offsetTop];
-			var timer=null;
-
-
-			for(var i=0; i<aNavList.length; i++){
-				;(function(index){
-					var oTop=arr[index];
-					aNavList[index].onclick=function(){
-						clearInterval(timer);
-						var start=(document.body.scrollTop || document.documentElement.scrollTop);
-						var dis=oTop-(start+80);
-						var iCount=parseInt(1000/30);
-						var n=0;
-
-						timer=setInterval(function(){
-							n++;
-							var a=1-n/iCount;
-							var cur=start+dis*(1-a*a*a*a);
-							document.body.scrollTop=document.documentElement.scrollTop=cur;
-
-						    if(n==iCount){
-						        clearInterval(timer);
-						    }
-						},30);
-					}
-				})(i);
-			}
-		})();
-
-	}
-
-	// for (var i = 0; i < oSt.length; i++) {
-	// 		;(function(index){
-	// 			var oTop = arr[index];
-				
-	// 			oSt[index].onclick = function(){
-	// 				clearInterval(timer);
-	// 				var start=document.body.scrollTop || document.documentElement.scrollTop;
-	// 				var dis=oTop-start;
-	// 				var iCount=parseInt(1000/30);
-	// 				var n=0;
-
-	// 				timer=setInterval(function(){
-	// 				    n++;
-	// 				    var a=1-n/iCount;
-	// 				    var cur=start+dis*(1-a*a*a*a);
-	// 				    document.body.scrollTop=document.documentElement.scrollTop=cur;
-
-	// 				    if(n==iCount){
-	// 				        clearInterval(timer);
-	// 				    }
-	// 				},30);
-	// 			}
-	// 		})(i);
-	// 	}
-</script>
 </head>
 
 <body>
-	<div id="header" class="nav">		
-    	<ul class="w clearfix" id="navCon">
-        	<li><a href="javascript:;">首页</a></li>
-            <li><a href="javascript:;">关于我</a></li>
-            <li><a href="javascript:;">专业技能</a></li>
-            <li><a href="javascript:;">案例展示</a></li>
-        </ul>
-    </div>
-    
-    <!--第一屏-->
-    <div class="section banner">
-    	<div class="banner-info w clearfix">
-        	<div class="banner-left fl"></div>
-            <div class="banner-right fl">
-            	<h2>I'M MA JUNWEI</h2>
-                <div class="border"></div>
-                <h3>Web前端</h3>
-            </div>
-        </div>
-    </div>
-    <!--第一屏 end-->
-    <!--第二屏 关于我-->
-    <div class="section about common" id="about">
-    	<div class="container w">
-        	<div class="title">
-            	<h2>关于我</h2>
-                <div class="title_en" style="width:130px;">
-                    <h3 style="display:block;">· About me ·</h3>
-                </div>
-            </div>
-            <p>我叫马俊微</p>
-            <p>一名前端研发工程师,对代码有浓厚的兴趣<br />有团队合作精神、思维清晰，细致耐心，责任心强!</p>
-            <p>Email : mjw3913@sina.com</p>
-            
-            
-        </div>
-    </div>
-    <!--第二屏 关于我 end-->
-    
-    <div class="about-back"></div>
-    
-    <!--第三屏 专业技能-->
-    <div class="section skill common" id="skill">
-    	<div class="w">
-        	<div class="title">
-            	<h2>专业技能</h2>
-                <div class="title_en" style="width:130px;">
-                    <h3 style="display:block;">· My skill ·</h3>
-                </div>
-            </div>
-        	<p>IT行业的学习需要持之以恒，知识深度与广度都很重要。HTML、CSS和JavaScript是前端技术中最核心的三个元素，而前端开发的重中之重就是对原生javascript的理解。另外还在不断学习新的知识，如angular，html5，php等等。学的不仅是技术，更是梦想！</p>
-            <div class="skill_class clearfix">
-            	<dl class="html_c">
-                	<dt><i>HTML</i></dt>
-                    <dd>
-                    	<ul>
-                        	<li>熟练掌握HTML</li>
-                            <li>熟练运用html标签</li>
-                            <li>能编写符合W3C标准的代码</li>
-                            <li>了解前端性能优化</li>
-                        </ul>
-                    </dd>
-                </dl>
-                <dl class="css_c">
-                	<dt><i>CSS</i></dt>
-                    <dd>
-                    	<ul>
-                        	<li>熟练掌握CSS层叠样式表</li>
-                            <li>注重浏览器兼容性，了解常见的CSS hack</li>
-                            <li>熟练运用CSS完成各种类型网页布局</li>
-                            <li></li>
-                        </ul>
-                    </dd>
-                </dl>
-                <dl class="js_c">
-                	<dt><i>JavaScript</i></dt>
-                    <dd>
-                    	<ul>
-                        	<li>熟练使用原生JS</li>
-                            <li>会使用jQuery库，了解js闭包等</li>
-                            <li>熟练使用seaJs,requireJs模块化开发</li>
-                            <li>了解ajax交互操作</li>
-                        </ul>
-                    </dd>
-                </dl>
-                <dl class="h5andcss3_c">
-                	<dt><i>HTML5&&CSS3</i></dt>
-                    <dd>
-                    	<ul>
-                        	<li>掌握html5</li>
-                            <li>熟练运用CSS3新属性，了解响应式设计</li>
-                            <li>了解git、grunt、gulp</li>
-                            <li></li>
-                        </ul>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-    <!--第三屏 专业技能 end-->
-    <div class="myskill-back"></div>
-    
-    <!--第四屏 案例展示-->
-    <div class="section common" id="progress">
-    	<div class="title">
-            <h2>案例展示</h2>
-            <div class="title_en" style="width:130px;">
-                <h3 style="display:block;">· Case show ·</h3>
-            </div>
-        </div>
-        
-       <div class="cont">
-            <h3>移动端页面>></h3>
-            <ul class="clearfix">
-                <li>
-                    <a href="javascript:;"><img src="images/p1.jpg"></a>
-                    <div class="textbox">
-                        <a href="case/HEXAGONE/HEXAGONE.html" target="_blank">
-                            <div>
-                                <h4>HEXAGONE</h4>
-                                <p>WEB 移动端 rem布局</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:;"><img src="images/p2.jpg"></a>
-                    <div class="textbox">
-                        <a href="case/m.juhuasuan.com/juhuasuan.html" target="_blank">
-                            <div>
-                                <h4>聚划算</h4>
-                                <p>WEB 移动端 rem布局</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:;"><img src="images/p3.jpg"></a>
-                    <div class="textbox">
-                        <a href="case/personal center/personalCenter.html" target="_blank">
-                            <div>
-                                <h4>个人中心</h4>
-                                <p>WEB 移动端 rem布局</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:;"><img src="images/stateApp.png"></a>
-                    <div class="textbox">
-                        <a href="case/stateApp/stateApp.html" target="_blank">
-                            <div>
-                                <h4>state客户端</h4>
-                                <p>WEB 移动端 rem布局</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-            
-            <h3>PC端页面>></h3>
-            <ul class="clearfix">
-                <li>
-                    <a href="javascript:;"><img src="images/jhxl.png"></a>
-                    <div class="textbox">
-                        <a href="case/www.jhxl.cn/jhxl.html" target="_blank">
-                            <div>
-                                <h4>金海祥龙</h4>
-                                <p>html+css</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:;"><img src="images/yzht.png"></a>
-                    <div class="textbox">
-                        <a href="case/yzht-exhibition/yzht.html" target="_blank">
-                            <div>
-                                <h4>义正昊天</h4>
-                                <p>html+css</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a href="javascript:;"><img src="images/composition.png"></a>
-                    <div class="textbox">
-                        <a href="case/composition/composition.html" target="_blank">
-                            <div>
-                                <h4>创意作文大赛</h4>
-                                <p>html+css+javascript</p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-       </div>
-    	
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<!--小屏幕导航按钮和logo-->
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand">个人主页</a>
+		</div>
+		<!--小屏幕导航按钮和logo-->
 		
+		<!--导航-->
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">首页</a></li>
+					<li><a href="#bbs">专业技能</a></li>
+					<li><a href="#course">案例展示</a></li>
+					<li><a href="#contact">关于我</a></li>
+				</ul>
+			</div>
+		<!--导航-->
 	</div>
-    <!--第四屏 案例展示 end-->
-    <div class="footer">Copyright © mySite By me</div>
+</nav>
+<!--导航-->
+
+<!--home-->
+<section id="home">
+	<div class="lvjing">
+		<div class="container">
+			<div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h1>打开你的手机，就等于打开一个世界，</h1>
+					<p>
+						
+						在移动的世界里一定不要把自己困在一个角落里，<br />
+						多出去走走，把身边美好的事物刻在心底，<br />
+						记录并分享，
+						传递美好。<br />
+					</p>
+					<img src="images/php.jpg" class="img-responsive" alt="php" />
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--home-->
+
+<!--bbs-->
+<section id="bbs">
+	<div class="container">
+		<div class="row wow fadeInUp" data-wow-duration="0.5s">
+			<div class="col-md-4">
+				<a href="javascript:;" target="_blank">
+					<img src="images/a.png" class="img-responsive" alt=""  />
+					<h3>熟练应用Ps</h3>
+					<p>熟练Photoshop、Illustrator、或其他绘图软件</p>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="javascript:;" target="_blank">
+					<img src="images/i.png" class="img-responsive" alt=""  />
+					<h3>HTML+CSS前端开发</h3>
+					<p>掌握CSS、CSS3、HTML、HTML5等前端开发技术</p>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="javascript:;" target="_blank">
+					<img src="images/b.png" class="img-responsive" alt=""  />
+					<h3>JavaScript开发语言</h3>
+					<p>了解面向对象机制、设计模式，能运用前端主流框架</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!--bbs-->
+
+<!--html5-->
+<section id="html5">
+	<div class="container">
+		<div class="col-md-5 wow fadeInLeft">
+			<h2>HTML(5)+CSS(3)</h2>
+			<p>如果说html是房子的骨架，那么css就是对于html的装修了。</p>
+			<p>
+				<span class="glyphicon glyphicon-grain mai-icon"></span>
+				熟练计算机的基础知识，能熟练使用Photoshop,Dreamweaver,sublime,等网页设计制作软件。
+			</p>
+			<p>
+				<span class="glyphicon glyphicon-grain mai-icon"></span>
+				能够解决不同主流浏览器的兼容性问题。
+			</p>
+			<p>
+				<span class="glyphicon glyphicon-grain mai-icon"></span>
+				使用HTML5与CSS3技术轻松实现设备自适应展示。
+			</p>
+			<p>
+				<span class="glyphicon glyphicon-grain mai-icon"></span>
+				清晰明了的语义代码结构，更高的可读性、更利于页面维护的。
+			</p>
+		</div>
+		<div class="col-md-7 wow fadeInRight">
+			<img src="images/framework.jpg" class="img-responsive" alt=""  />
+		</div>
+	</div>
+</section>
+<!--html5-->
+
+<!--bootstrap-->
+<section id="bootstrap">
+	<div class="container wow fadeInUp">
+		<div class="col-md-6">
+			<!--<img src="images/bg.png" class="img-responsive" alt=""  />-->
+		</div>
+		<div class="col-md-6">
+			<h2>JavaScript技能</h2>
+			<p>熟悉Javascript脚本语言，jQuery框架，能独立编写脚本文件，实现网页特效和用户交互体验。</p>
+			<p><span class="glyphicon glyphicon-grain mai-icon
+"></span>掌握JavaScript语言核心技术DOM、Ajax、JSON等，熟悉jQuery等主流的JS库，了解其运行机制；</p>
+			<p><span class="glyphicon glyphicon-grain mai-icon
+"></span>了解前端MVC架构，了解AngularJs/VueJs技术。</p>
+		</div>
+	</div>
+</section>
+<!--bootstrap-->
+
+<!--course-->
+<section id="course">
+	<div class="container">
+		<div class="row wow fadeIn" data-wow-delay="0.6s">
+			<div class="col-md-12">
+				<h2>案例展示</h2>
+				<p class="h">移动端页面>></p>
+			</div>
+			<div class="col-md-3">
+				<div class="course">
+					<img src="images/stateApp.jpg" class="img-responsive center-block" alt=""  />
+					<div class="mask">
+						<div class="txt">
+							<p class="bt"></p>
+							<p>state客户端带特效</p>
+							<p class="bb"></p>
+						</div>
+						<a href="case/stateApp/stateApp.html" target="_blank"></a>
+					</div>
+				</div>
+				<div class="info">
+					<a href="case/stateApp/stateApp.html">state客户端rem弹性布局+js</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="course">
+					<img src="images/p2.jpg" class="img-responsive center-block" alt=""  />
+					<div class="mask">
+						<div class="txt">
+							<p class="bt"></p>
+							<p>仿聚划算移动端首页</p>
+							<p class="bb"></p>
+						</div>
+						<a href="case/m.juhuasuan.com/juhuasuan.html" target="_blank"></a>
+					</div>
+				</div>
+				<div class="info">
+					<a href="case/m.juhuasuan.com/juhuasuan.html">rem弹性布局+Swiper滑动特效插件+json取数据</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="course">
+					<img src="images/p1.jpg" class="img-responsive center-block" alt=""  />
+					<div class="mask">
+						<div class="txt">
+							<p class="bt"></p>
+							<p>移动端rem布局</p>
+							<p class="bb"></p>
+						</div>
+						<a href="case/HEXAGONE/HEXAGONE.html" target="_blank"></a>
+					</div>
+				</div>
+				<div class="info">
+					<a href="case/HEXAGONE/HEXAGONE.html">HEXAGONE移动端rem弹性布局</a>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="course">
+					<img src="images/p3.jpg" class="img-responsive center-block" alt=""  />
+					<div class="mask">
+						<div class="txt">
+							<p class="bt"></p>
+							<p>移动端rem布局</p>
+							<p class="bb"></p>
+						</div>
+						<a href="case/personal center/personalCenter.html" target="_blank"></a>
+					</div>
+				</div>
+				<div class="info">
+					<a href="case/personal center/personalCenter.html">个人中心移动端rem布局</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="course">
+					<img src="images/jdPhone.jpg" class="img-responsive center-block" alt=""  />
+					<div class="mask">
+						<div class="txt">
+							<p class="bt"></p>
+							<p>仿京东移动端首页</p>
+							<p class="bb"></p>
+						</div>
+						<a href="case/jdPhone/jdPhone.html" target="_blank"></a>
+					</div>
+				</div>
+				<div class="info">
+					<a href="case/jdPhone/jdPhone.html">百分百流体布局</a>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<p class="h">PC端页面>></p>
+			</div>
+			<div class="col-md-4">
+				<div class="course">
+					<img src="images/jhxl.png" class="img-responsive center-block" alt=""  />
+					<div class="mask">
+						<div class="txt">
+							<p class="bt"></p>
+							<p>金海祥龙广告公司网站</p>
+							<p class="bb"></p>
+						</div>
+						<a href="case/www.jhxl.cn/jhxl.html" target="_blank"></a>
+					</div>
+				</div>
+				<div class="info">
+					<a href="case/www.jhxl.cn/jhxl.html">金海祥龙广告公司网站</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="course">
+					<img src="images/yzht.png" class="img-responsive center-block" alt=""  />
+					<div class="mask">
+						<div class="txt">
+							<p class="bt"></p>
+							<p>义正昊天展览展示公司网站</p>
+							<p class="bb"></p>
+						</div>
+						<a href="case/yzht-exhibition/yzht.html" target="_blank"></a>
+					</div>
+				</div>
+				<div class="info">
+					<a href="case/yzht-exhibition/yzht.html">义正昊天展览展示公司网站</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="course">
+					<img src="images/composition.png" class="img-responsive center-block" alt=""  />
+					<div class="mask">
+						<div class="txt">
+							<p class="bt"></p>
+							<p>格伦杯创意作文大赛</p>
+							<p class="bb"></p>
+						</div>
+						<a href="case/composition/composition.html" target="_blank"></a>
+					</div>
+				</div>
+				<div class="info">
+					<a href="case/composition/composition.html">固定布局+js特效</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="course">
+					<img src="images/360kan.png" class="img-responsive center-block" alt=""  />
+					<div class="mask">
+						<div class="txt">
+							<p class="bt"></p>
+							<p>仿360影视首页</p>
+							<p class="bb"></p>
+						</div>
+						<a href="case/360kan/v360.html" target="_blank"></a>
+					</div>
+				</div>
+				<div class="info">
+					<a href="case/360kan/v360.html">360影视首页固定布局</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--course-->
+
+
+<!--contact-->
+<section id="contact">
+	<div class="lvjing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 wow fadeInLeft">
+					<h2>
+						<span class="glyphicon glyphicon-send"></span>
+						&nbsp;个人信息
+					</h2>
+					<p class="infor">
+						我来自河北，肢体残疾，性格内向但骨子里却有种不服输的精神，积极乐观、专心、细致，有耐心；勤奋务实，爱学习，爱钻研，乐于助人。最大的满足感在于做完该做的事儿，并且有个非常好的结果，过程再艰辛也有说不尽的喜悦。随性，喜欢拍照，追求完美。最大的缺点是太细心，可能对一点点小问题也会将之做好，偶尔让人感觉多此一举，没有追求。
+					</p>
+					<address>
+						<p>
+							<span class="glyphicon glyphicon-user"></span>
+							&nbsp;姓名：马俊微
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone-alt"></span>
+							 &nbsp;联系电话：13671393421
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-envelope"></span>
+							&nbsp;邮箱:mjw3913@sina.com
+						</p>
+					</address>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-4 wow fadeInRight">
+					<div class="infor_head"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--contact-->
+
+<!--footer-->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p>
+					Copyright&nbsp;©&nbsp;2016&nbsp;&nbsp;https://xxlove3913.github.io&nbsp;&nbsp;晓晓.
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--footer-->
+
+
+<script src="js/jquery.1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+//	导航跳转效果插件
+	$(function(){
+		$(".nav").singlePageNav({
+			offset:70
+		});
+	})
+	
+//	小屏幕导航点击关闭菜单
+	$(".navbar-collapse a").click(function(){
+		$(".navbar-collapse").collapse("hide");
+	})
+	new WOW().init();
+</script>
 </body>
+
 </html>

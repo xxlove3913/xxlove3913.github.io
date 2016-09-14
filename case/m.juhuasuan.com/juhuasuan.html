@@ -17,6 +17,80 @@
 	window.addEventListener('resize',change,false);
 })();
 </script>
+<script>
+var data=[
+	{
+		src:'images/shop1.png',
+		sold:68423,
+		discount:2.3,
+		price:299,
+		nowPrice:51,
+	},
+	{
+		src:'images/shop2.png',
+		sold:68423,
+		discount:2.3,
+		price:299,
+		nowPrice:51,
+	},
+	{
+		src:'images/shop3.png',
+		sold:68423,
+		discount:2.3,
+		price:299,
+		nowPrice:289,
+	},
+	{
+		src:'images/shop4.png',
+		sold:68423,
+		discount:2.3,
+		price:288,
+		nowPrice:88,
+	},
+	{
+		src:'images/shop5.png',
+		sold:68423,
+		discount:2.3,
+		price:299,
+		nowPrice:199,
+	},
+	{
+		src:'images/shop6.png',
+		sold:68423,
+		discount:1.7,
+		price:3299,
+		nowPrice:588,
+	},
+	{
+		src:'images/shop7.png',
+		sold:68423,
+		discount:6.3,
+		price:7665,
+		nowPrice:4599,
+	},
+	{
+		src:'images/shop8.png',
+		sold:68423,
+		discount:2.3,
+		price:299,
+		nowPrice:51,
+	},
+	{
+		src:'images/shop9.png',
+		sold:68423,
+		discount:2.3,
+		price:439,
+		nowPrice:129,
+	},
+	{
+		src:'images/shop10.png',
+		sold:45423,
+		discount:2.8,
+		price:299,
+		nowPrice:9,
+	}
+];
+</script>
 </head>
 
 <body>
@@ -25,88 +99,88 @@
         <h1><a href="#">聚划算</a></h1>
     </header>
     
-	<div class="banner">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#"><img src="images/banner1.png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/banner2.png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/banner3.png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/banner4.png"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/banner5.png"></a></div>
+    	<div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/banner1.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/banner2.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/banner3.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/banner4.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/banner5.png"></a></div>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
-    
-    <script src="dist/js/swiper.min.js"></script>
-	<script>
-        var swiper = new Swiper('.swiper-container',{
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            loop:true,
-            autoplay:1000,
-            autoplayDisableOnInteraction:true
-        });
-    </script>
-    
-    <div class="classify">
-        <ul class="clearfix">
-            <li class="cla-item-1">
-                <a href="#">
-                    <span></span>
-                    <p>商品</p>
-                </a>
-            </li>
-            <li class="cla-item-2">
-                <a href="#">
-                    <span></span>
-                    <p>生活</p>
-                </a>
-            </li>
-            <li class="cla-item-3">
-                <a href="#">
-                    <span></span>
-                    <p>品牌</p>
-                </a>
-            </li>
-            <li class="cla-item-4">
-                <a href="#">
-                    <span></span>
-                    <p>聚宝盆</p>
-                </a>
-            </li>
-            <li class="cla-item-5">
-                <a href="#">
-                    <span></span>
-                    <p>聚名品</p>
-                </a>
-            </li>
-            <li class="cla-item-6">
-                <a href="#">
-                    <span></span>
-                    <p>聚家装</p>
-                </a>
-            </li>
-            <li class="cla-item-7">
-                <a href="#">
-                    <span></span>
-                    <p>聚透</p>
-                </a>
-                <b class="redHot"></b>
-            </li>
-            <li class="cla-item-8">
-                <a href="#">
-                    <span></span>
-                    <p>客户端</p>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <section>
+        
+        <script src="dist/js/swiper.min.js"></script>
+		<script>
+            var swiper = new Swiper('.swiper-container',{
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                loop:true,
+                autoplay:1000,
+                autoplayDisableOnInteraction:true
+            });
+        </script>
+        
+        <div class="classify">
+            <ul class="clearfix">
+                <li class="cla-item-1">
+                    <a href="#">
+                        <span></span>
+                        <p>商品</p>
+                    </a>
+                </li>
+                <li class="cla-item-2">
+                    <a href="#">
+                        <span></span>
+                        <p>生活</p>
+                    </a>
+                </li>
+                <li class="cla-item-3">
+                    <a href="#">
+                        <span></span>
+                        <p>品牌</p>
+                    </a>
+                </li>
+                <li class="cla-item-4">
+                    <a href="#">
+                        <span></span>
+                        <p>聚宝盆</p>
+                    </a>
+                </li>
+                <li class="cla-item-5">
+                    <a href="#">
+                        <span></span>
+                        <p>聚名品</p>
+                    </a>
+                </li>
+                <li class="cla-item-6">
+                    <a href="#">
+                        <span></span>
+                        <p>聚家装</p>
+                    </a>
+                </li>
+                <li class="cla-item-7">
+                    <a href="#">
+                        <span></span>
+                        <p>聚透</p>
+                    </a>
+                    <b class="redHot"></b>
+                </li>
+                <li class="cla-item-8">
+                    <a href="#">
+                        <span></span>
+                        <p>客户端</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section>
         <div class="list">
             <h2><span>聚划算热卖排行</span><i>TOP10</i></h2>
             <ul>
-                <li class="clearfix">
+                <!--<li class="clearfix">
                     <div class="num num1 fl">1</div>
                     <div class="shop fl"><img src="images/shop1.png"></div>
                     <div class="sold fl">
@@ -114,90 +188,26 @@
                         <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
                     </div>
                     <div class="nowPrice fr"><b>￥<i>51</i></b></div>
-                </li>
-                <li class="clearfix">
-                    <div class="num num2 fl">2</div>
-                    <div class="shop fl"><img src="images/shop2.png"></div>
-                    <div class="sold fl">
-                        <p>已售<span>68423</span></p>
-                        <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
-                    </div>
-                    <div class="nowPrice fr"><b>￥<i>51</i></b></div>
-                </li>
-                <li class="clearfix">
-                    <div class="num num3 fl">3</div>
-                    <div class="shop fl"><img src="images/shop3.png"></div>
-                    <div class="sold fl">
-                        <p>已售<span>68423</span></p>
-                        <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
-                    </div>
-                    <div class="nowPrice fr"><b>￥<i>289</i></b></div>
-                </li>
-                <li class="clearfix">
-                    <div class="num num4 fl">4</div>
-                    <div class="shop fl"><img src="images/shop4.png"></div>
-                    <div class="sold fl">
-                        <p>已售<span>68423</span></p>
-                        <p><strong>2.3</strong>折<b>￥<i>288</i></b></p>
-                    </div>
-                    <div class="nowPrice fr"><b>￥<i>88</i></b></div>
-                </li>
-                <li class="clearfix">
-                    <div class="num num5 fl">5</div>
-                    <div class="shop fl"><img src="images/shop5.png"></div>
-                    <div class="sold fl">
-                        <p>已售<span>68423</span></p>
-                        <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
-                    </div>
-                    <div class="nowPrice fr"><b>￥<i>199</i></b></div>
-                </li>
-                <li class="clearfix">
-                    <div class="num num6 fl">6</div>
-                    <div class="shop fl"><img src="images/shop6.png"></div>
-                    <div class="sold fl">
-                        <p>已售<span>68423</span></p>
-                        <p><strong>1.7</strong>折<b>￥<i>3299</i></b></p>
-                    </div>
-                    <div class="nowPrice fr"><b>￥<i>588</i></b></div>
-                </li>
-                <li class="clearfix">
-                    <div class="num num7 fl">7</div>
-                    <div class="shop fl"><img src="images/shop7.png"></div>
-                    <div class="sold fl">
-                        <p>已售<span>68423</span></p>
-                        <p><strong>6.3</strong>折<b>￥<i>7665</i></b></p>
-                    </div>
-                    <div class="nowPrice fr"><b>￥<i>4599</i></b></div>
-                </li>
-                <li class="clearfix">
-                    <div class="num num8 fl">8</div>
-                    <div class="shop fl"><img src="images/shop8.png"></div>
-                    <div class="sold fl">
-                        <p>已售<span>68423</span></p>
-                        <p><strong>2.3</strong>折<b>￥<i>299</i></b></p>
-                    </div>
-                    <div class="nowPrice fr"><b>￥<i>51</i></b></div>
-                </li>
-                <li class="clearfix">
-                    <div class="num num9 fl">9</div>
-                    <div class="shop fl"><img src="images/shop9.png"></div>
-                    <div class="sold fl">
-                        <p>已售<span>68423</span></p>
-                        <p><strong>2.3</strong>折<b>￥<i>439</i></b></p>
-                    </div>
-                    <div class="nowPrice fr"><b>￥<i>129</i></b></div>
-                </li>
-                <li class="clearfix">
-                    <div class="num num10 fl">10</div>
-                    <div class="shop fl"><img src="images/shop10.png"></div>
-                    <div class="sold fl">
-                        <p>已售<span>68423</span></p>
-                        <p><strong>2.8</strong>折<b>￥<i>299</i></b></p>
-                    </div>
-                    <div class="nowPrice fr"><b>￥<i>9</i></b></div>
-                </li>
-                <li class="more"><a href="#">更多划算  逛起来！</a></li>
+                </li>-->
             </ul>
+            <div class="more"><a href="#">更多划算  逛起来！</a></div>
+            <script>
+            	var oList=document.querySelector('.list');
+				var oUl=oList.querySelector('ul');
+				for(var i=0; i<data.length; i++){
+					var oLi=document.createElement('li');
+					
+					oLi.innerHTML=''
+						+'<div class="num num'+(i+1)+' fl">'+(i+1)+'</div>'
+						+'<div class="shop fl"><img src='+data[i].src+'></div>'
+						+'<div class="sold fl">'
+						+'	<p>已售<span>'+data[i].sold+'</span></p>'
+						+'	<p><strong>'+data[i].discount+'</strong>折<b>￥<i>'+data[i].price+'</i></b></p>'
+						+'</div>'
+						+'<div class="nowPrice fr"><b>￥<i>'+data[i].nowPrice+'</i></b></div>';
+						oUl.appendChild(oLi);
+				}
+            </script>
         </div>
         <div class="goods">
         	<div class="common clearfix">
