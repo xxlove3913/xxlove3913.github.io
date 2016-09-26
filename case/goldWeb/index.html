@@ -429,7 +429,8 @@
                     </table>
                 </div>
                 <div class="list_body">
-                    <table cellspacing="1" style="position:absolute;" id="list_body">
+                	<div id="list_cont" style="position:absolute;">
+                    <table cellspacing="1">
                         <tbody>
                             <tr class="odd">
                                 <td class="name color1">郝*军</td>
@@ -529,16 +530,15 @@
                             </tr>                        
                             </tbody>
                     </table>
+                    </div>
                 </div>
                 <div class="list_foot">
                 	<table cellspacing="1" width="1000">
-                    	<tfoot>
-                            <tr height="75" bgcolor="#eaeaea">
-                                <td>
-                                    <p>客户在交易所下的会员单位开户，无法享受到返佣福利，金盈网是国内首家也是返佣比例最高的贵金属现货返佣机构，诚信返佣7年，服务了数以万计的投资者，拥有极好的声誉。更多关于返佣或者开户的相关问题，请直接咨询金盈网<i>【在线客服】</i></p>
-                                </td>
-                            </tr>
-                        </tfoot>
+                        <tr height="75" bgcolor="#eaeaea">
+                            <td width="1000">
+                                <p>客户在交易所下的会员单位开户，无法享受到返佣福利，金盈网是国内首家也是返佣比例最高的贵金属现货返佣机构，诚信返佣7年，服务了数以万计的投资者，拥有极好的声誉。更多关于返佣或者开户的相关问题，请直接咨询金盈网<i>【在线客服】</i></p>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 
@@ -549,10 +549,10 @@
           	<h3 class="title_common">
                 <span class="h_bg h_bgLeft"></span><b><strong>我要</strong>介绍客户</b><span class="h_bg h_bgRight"></span>
             </h3>
-            <form action="" class="clearfix">
+            <form action="" class="clearfix" id="form">
             	<ul class="fl">
-                	<li>姓名：<input type="text" placeholder="请输入真实姓名" /></li>
-                    <li>电话：<input type="text" placeholder="请用真实手机号" /></li>
+                	<li>姓名：<input type="text" placeholder="请输入真实姓名" id="input_name" /></li>
+                    <li>电话：<input type="text" placeholder="请用真实手机号" id="input_tel" /></li>
                 </ul>
                 <a href="#" class="fl submit_btn">立即提交</a>
                 <a href="#" class="fl contact_btn">联系客服</a>

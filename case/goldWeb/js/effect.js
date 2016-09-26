@@ -23,7 +23,7 @@ $(function(){
 	tab("platform_box");
 	tab("cooperation");
 	
-	var oCont=document.getElementById("list_body");
+	var oCont=document.getElementById("list_cont");
 	
 	oCont.innerHTML+=oCont.innerHTML;
 	oCont.style.height=oCont.offsetHeight+"px";
@@ -40,4 +40,23 @@ $(function(){
 		},30);
 	}
 	toTop();
+	
+	var oForm=document.getElementById("form");
+	var oInputName=oForm.getElementsByTagName("input")[0];
+	var oInputTel=oForm.getElementsByTagName("input")[1];
+	oInputName.value="请输入真实姓名";	
+	oInputTel.value="请用真实手机号";	
+	
+	oInputName.onfocus=function(){
+		oInputName.value="";	
+	}
+	oInputTel.onfocus=function(){
+		oInputTel.value="";	
+	}
+	oInputName.onblur=function(){
+		oInputName.value="请输入真实姓名";	
+	}
+	oInputTel.onblur=function(){
+		oInputTel.value="请用真实手机号";	
+	}
 });
