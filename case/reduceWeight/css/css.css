@@ -1,0 +1,136 @@
+@media screen and (min-width:640px){
+	#page .foot .btn{
+		width:168px;
+		height:63px;
+		line-height:63px;
+		font-size:28px;
+	}
+	.page1_info ul{ margin:100px 56px; font-size:14px;}
+	.page1_info ul li{ float:left; padding:20px 20px 0; text-align:center; }
+
+	.content_info{ padding-left:126px; margin:100px 0;}
+	.content_info ul li{ height:46px; line-height:46px; font-size:18px; color:#ce157f;}
+	.content_info ul li input{ margin-right:20px;}
+	.page1_foot a{ width:168px; height:63px; line-height:63px; text-align:center; background:url(../images/btn_bg.png) no-repeat; display:block; margin:0 auto; font-size:28px; color:#fff;}
+	
+	.foot_comm ul li a{
+	width:168px;
+	height:63px;
+	line-height:63px;
+	background:url(../images/btn_bg.png) no-repeat;
+	display:block;
+	font-size:28px;
+	
+	}
+	#page9 p{ font-size:16px;}
+	#page9 p.pink{color: #e60094; font-weight:bold; line-height:40px; padding-top:20px;}
+	#page9 p.black{ color: #5A5859; line-height:30px;}
+	#page9 .qrcode{ width:320px; height:320px; margin:0 auto;}
+}
+
+
+	#page{ background:url(../images/bg.png) no-repeat left top; background-size:contain; width:100%; margin: 0 auto;}
+	#page .top img{ width:100%;}
+	#page .content img{ width:100%;}
+	#page .foot{width:100%; position:relative; }
+	#page .foot img{ width:100%;}
+	#page .foot .btn{
+	    	background:url(../images/btn_bg.png) no-repeat;
+	    	background-size:100% 100%;
+	    	text-align:center;
+	    	position:absolute;
+	    	left: 47.5%;
+	    	bottom: 17.34%;
+	    	
+	}
+	#page .foot .btn a{ color:#fff;}
+	
+	.page_bg{ background:url(../images/bg.png) no-repeat left top; margin: 0 auto; padding:60px 0 100px;}
+	.title{ background:url(../images/title_bg_03.png) no-repeat top center;width:263px;  height:65px; margin:0 auto; font-size:28px; color:#fff; text-align:center;}
+	.title p{ padding-top:5px;}
+	.page1_info{ width:100%;}
+	.page1_info ul li img{ border:1px solid #ccc; width:100%; height:auto;}
+	.page1_info li .dec{ height:32px; line-height:32px;}
+	.page1_info li input{ vertical-align:middle;}
+	.page1_foot{ text-align:center;}
+	.page1_foot a{color:#fff;}
+		.content_info{ padding-left:126px; margin:100px 0;}
+	.content_info ul li{ height:46px; line-height:46px; font-size:18px; color:#ce157f;}
+	.content_info ul li input{ margin-right:20px;}
+
+
+	.foot_comm ul{margin:0 16%;}
+	.foot_comm ul li{ 
+		width:50%; 
+		float:left;
+		color:#fff;
+	}
+	.foot_comm ul li a{
+		text-align:center;
+		margin:0 auto;
+		color:#fff;
+	}	
+	#page9{ margin:0 auto; text-align:center;}
+
+	
+@media screen and (min-width:320px) and (max-width:640px){
+		.title{ background:url(../images/title_bg_03.png) no-repeat top center; background-size:100% 100%;  width:6.675rem; height:1.625rem; margin:0 auto; font-size:0.7rem; color:#fff; text-align:center;}
+	.title p{ padding-top:0.125rem;}
+	#page .foot .btn{
+    	width:4.2rem;
+    	height:1.575rem;
+    	line-height:1.575rem;
+    	background:url(../images/btn_bg.png) no-repeat;
+    	background-size:100% 100%;
+    	text-align:center;
+    	position:absolute;
+    	left: 47.5%;
+    	bottom: 17.34%;
+    	font-size:0.7rem;
+	}
+	.page1_info ul{ margin:2.5rem 1.4rem; font-size:14px;}
+	.page1_info ul li{ 
+		float:left; 
+		text-align:center;
+		width:28%;
+		margin:0.5rem 2%;
+		display:inline;
+	 }
+	 .page1_foot a{
+	 		width:4.2rem;
+    	height:1.575rem;
+    	line-height:1.575rem;
+    	font-size:0.7rem;
+    	background:url(../images/btn_bg.png) no-repeat;
+    	background-size:100% 100%;
+    	display:block;
+    	margin:0 auto;
+	 }
+	 .foot_comm ul li a{
+		display:block;
+		background:url(../images/btn_bg.png) no-repeat;
+		background-size:100% 100%;
+		width:4.2rem;
+		height:1.575rem;
+		text-align:center;
+		line-height:1.575rem;
+		font-size:0.7rem;
+		margin:0 auto;
+		color:#fff;
+	}
+	#page9 p.qrcode img{ width:100%; height:auto;}
+	#page9 div img{ width:100%; height:auto;}
+	#page9 p{ font-size:0.4rem;}
+	#page9 p.pink{color: #e60094; font-weight:bold; line-height:1rem; padding-top:0.5rem;}
+	#page9 p.black{ color: #5A5859; line-height:0.75rem;}
+	#page9 .qrcode{ width:8rem; height:8rem; margin:0 auto;}
+	.content_info{ padding-left:3.15rem; margin:2.5rem 0;}
+	.content_info ul li{ height:1.15rem; line-height:1.15rem; font-size:0.45rem; color:#ce157f;}
+	.content_info ul li input{ margin-right:0.5rem;}
+}
+	
+	      
+	  
+
+
+  
