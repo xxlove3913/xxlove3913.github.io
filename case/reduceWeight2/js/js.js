@@ -8,19 +8,10 @@
 
 //设 您的职业页面 职业列表背景
 $(function(){
-//	$(".page1_info ul li a:even").css({
-//		background:"url(images/vocation_bg_pink0.png) no-repeat",
-//		backgroundSize:"5.2rem 2.95rem"
-//	});
-//	$(".page1_info ul li a:odd").css({
-//		background:"url(images/vocation_bg_pink1.png) no-repeat",
-//		backgroundSize:"5.2rem 2.95rem"
-//	});
-//	
-//	$(".chosen").css({
-//		background:"url(images/vocation_bg_green0.png) no-repeat",
-//		backgroundSize:"5.2rem 2.95rem"
-//	})
+
+	$(".index .btn").click(function(){
+		window.location.href="one.html";
+	})
 	$(".page1_info ul li a").click(function(){
 		window.location.href="two.html";
 	});
