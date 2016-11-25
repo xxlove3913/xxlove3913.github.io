@@ -5,7 +5,7 @@ h1,h2,h3,h4,h5,h6,strong,b{ font-weight:normal;}
 em,i{ font-style: normal;}
 img{ vertical-align:top;}
 input{ vertical-align:middle;}
-body{ font-family:"microsoft yahei"; min-width:320px; }
+body{ font-family:"microsoft yahei"; min-width:320px; background:#ff6201;}
 .clearfix:after{ content:""; display:block; clear:both;}
 .clearfix{ zoom:1;}
 .fl{ float:left;}
