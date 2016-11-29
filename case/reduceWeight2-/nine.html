@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<title>测测你的肥胖指数是多少？</title>
+		<link rel="stylesheet" href="css/basic.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/js.js"></script>
+	</head>
+	<body>
+		<div id="page9" class="container">
+			<section class="page_info">
+				
+				<form  name="test" method="get">
+					<ul>
+						<li class="clearfix gender">
+							<div class="left">您的性别</div>
+							<div class="center">
+								<select>
+									<option selected="selected">女</option>
+									<option>男</option>
+								</select>
+							</div>
+							<div class="right"></div>
+						</li>
+						<li class="clearfix">
+							<div class="left">您的身高</div>
+							<div class="center">
+								<input type="text" id="stature" value="160" />
+							</div>
+							<div class="right">厘米</div>
+						</li>
+						<li class="clearfix">
+							<div class="left">您的体重</div>
+							<div class="center">
+								<input type="text"  id="weight" value="45" />
+							</div>
+							<div class="right">千克(kg)</div>
+						</li>
+						<li class="clearfix">
+							<div class="left">您的年龄</div>
+							<div class="center">
+								<input type="text" value="23"  />
+							</div>
+							<div class="right">岁</div>
+						</li>
+						<li class="clearfix">
+							<div class="left">日运动量</div>
+							<div class="center">
+								<select>
+									<option selected="selected">轻度</option>
+									<option>中度</option>
+									<option>重度</option>
+								</select>
+							</div>
+							<div class="right"></div>
+						</li>
+						<li class="clearfix">
+							<div>
+								<input type="button" class="test_btn" value="检测"  />
+							</div>
+						</li>
+					</ul>
+				</form>
+			</section>
+		</div>
+		<div id="result" class="container" style="display:none;">
+			<section class="result_info">
+				<div class="text clearfix">
+					<h3>测试结果</h3>
+					<h4 class="clearfix"><p>体质指数：<em>18</em><strong>**</strong><i>(21-22为最佳)</i></p></h4>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

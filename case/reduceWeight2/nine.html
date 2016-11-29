@@ -12,56 +12,40 @@
 	</head>
 	<body>
 		<div id="page9" class="container">
+			<header class="title">
+				<p>>>测测您的体质指数是多少？</p>
+	        </header>
 			<section class="page_info">
-				
 				<form  name="test" method="get">
 					<ul>
-						<li class="clearfix gender">
-							<div class="left">您的性别</div>
-							<div class="center">
-								<select>
-									<option selected="selected">女</option>
-									<option>男</option>
-								</select>
-							</div>
-							<div class="right"></div>
+						<li class="gender">
+							<select>
+								<option value="请选择性别">请选择性别</option>
+								<option>女</option>
+								<option>男</option>
+							</select>
 						</li>
-						<li class="clearfix">
-							<div class="left">您的身高</div>
-							<div class="center">
-								<input type="text" id="stature" value="160" />
-							</div>
-							<div class="right">厘米</div>
+						<li>
+							<span>您的身高*</span>
+							<input type="text" id="stature" placeholder="请输入您的身高"  />厘米(cm)
 						</li>
-						<li class="clearfix">
-							<div class="left">您的体重</div>
-							<div class="center">
-								<input type="text"  id="weight" value="45" />
-							</div>
-							<div class="right">千克(kg)</div>
+						<li>
+							<span>您的体重*</span>
+							<input type="text" id="weight" placeholder="请输入您的体重"  />千克(kg)
 						</li>
-						<li class="clearfix">
-							<div class="left">您的年龄</div>
-							<div class="center">
-								<input type="text" value="23"  />
-							</div>
-							<div class="right">岁</div>
+						<li>
+							<span>您的年龄*</span>
+							<input type="text"  placeholder="请输入您的年龄"  />岁
 						</li>
-						<li class="clearfix">
-							<div class="left">日运动量</div>
-							<div class="center">
-								<select>
-									<option selected="selected">轻度</option>
-									<option>中度</option>
-									<option>重度</option>
-								</select>
-							</div>
-							<div class="right"></div>
+						<li class="motionfre">
+							<select>
+								<option selected="selected">轻度</option>
+								<option>中度</option>
+								<option>重度</option>
+							</select>
 						</li>
-						<li class="clearfix">
-							<div>
-								<input type="button" class="test_btn" value="检测"  />
-							</div>
+						<li class="button">
+							<input type="button" class="test_btn" value="立即测试"  />
 						</li>
 					</ul>
 				</form>
@@ -73,6 +57,14 @@
 					<h3>测试结果</h3>
 					<h4 class="clearfix"><p>体质指数：<em>18</em><strong>**</strong><i>(21-22为最佳)</i></p></h4>
 				</div>
+				
+				<p class="desc">体质值不仅关系到体重和体形，对人体健康也有重大的影响，过高或过低都意味着更容易患上慢性疾病。
+</p>
+<span>（体脂率适用于一般变通人，但运动员除外。）</span>
+				<p class="tip">为了美，更为了健康，<br />
+告诉大家一个健康瘦身的好方法~</p>
+				<p class="way">【长按识别二维码添加微信号】</p>
+				<p class="qr_code"><img src="images/qr_code.gif " /></p>
 			</section>
 		</div>
 	</body>
