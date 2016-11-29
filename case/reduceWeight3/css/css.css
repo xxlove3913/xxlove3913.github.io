@@ -1,0 +1,50 @@
+.container{ width:100%; background:url(../images/wrap_bg.png) repeat-x; background-size:100% 100%; height: 23rem;;}
+.index{  padding:3.25rem 0 5rem;}
+.index .text{ width:10rem; height:14.3rem; background:url(../images/index_text.png) no-repeat; background-size:10rem 14.3rem; margin:0 auto; }
+.index .btn{ width:4.6rem; height:1.55rem; display:block; background:url(../images/test_btn.png) no-repeat; background-size:4.6rem 1.55rem; margin:0.7rem auto 0;}
+.title{ width:16rem; height:2rem; line-height:2rem; background:#d65200; color:#ff9f50;}
+.title p{ padding-left:1.25rem; font-size:0.75rem;}
+.page1_info{ padding-bottom:3.5rem;}
+.page1_info ul{ margin:2.625rem 1.5rem;}
+.page1_info ul li{width:50%; float:left; display:inline; margin-bottom:1.45rem;}
+.page1_info ul li a{ width:6rem; height:3.6rem; display:block;  margin:0 auto;}
+.page1_info ul li:nth-child(odd) a{ background:url(../images/vocation_bg0.png) no-repeat;	background-size:6rem 3.6rem}
+.page1_info ul li:nth-child(even) a{ background:url(../images/vocation_bg1.png) no-repeat;	background-size:6rem 3.6rem}
+		
+.page1_info ul li a i{ display:block; width:100%; height:100%;}
+.page1_info ul li a.stu i{ background:url(../images/stu.png) no-repeat;background-size:6rem 3.6rem}
+.page1_info ul li a.officeWorker i{ background:url(../images/officeWorker.png) no-repeat; background-size:6rem 3.6rem}
+.page1_info ul li a.engineer i{ background:url(../images/engineer.png) no-repeat;background-size:6rem 3.6rem}
+.page1_info ul li a.baoma i{ background:url(../images/baoma.png) no-repeat; background-size:6rem 3.6rem}
+.page1_info ul li a.boss i{ background:url(../images/boss.png) no-repeat; background-size:6rem 3.6rem}
+.page1_info ul li a.other i{ background:url(../images/other.png) no-repeat; background-size:6rem 3.6rem}
+
+.page_info { /*padding:1.85rem 0 6rem;*/}
+.page_info ul{ padding-top:2.625rem;}
+.page_info li{ margin-bottom:0.5rem;}
+.page_info a{ width:11.05rem; height:2rem; line-height:2rem; background:#fdd8ac; border:1px solid #f77914; display:block; margin:0 auto; color:#d65200; font-size:0.75rem; text-align:center; position:relative;}
+.page_info a span{ width:2rem; height:2rem; position:absolute; top:0; left:0;}
+
+form{ padding:0 2.5rem; font-size:0.6rem;}
+form input,form select{ font-size:0.6rem;}
+#page9 form ul li{ position:relative;}
+form ul select{ width:11.05rem; height:1.5rem; border:1px solid #ccc;}
+form ul input[type="text"]{ width:4.5rem; height:1.5rem; border:1px solid #ccc; padding-left:3.75rem; margin-right:2px;}
+form ul li span{ float:left; position:absolute; top:0; left:0; height:1.5rem; line-height:1.5rem; padding-left:0.45rem; font-size:.6rem;}
+form ul li.button{ margin-top:1rem;}
+form ul input[type="button"]{ width:11.05rem; height:1.5rem; background:#e26213; border:1px solid #f56912; color:#fff;}
+
+#result { padding:3.5rem 0 2rem; text-align:center;}
+#result .result_info{ width:16rem; height:18rem; background:url(../images/result_bg.png) no-repeat; background-size:100% 100%;}
+#result .text{ width:9.3rem; margin:0 auto; padding-top:1.5rem;}
+#result h3{ font-size:0.75rem; color:#f9002f; height:1.5rem; line-height:1.5rem;}
+#result h4{ font-size:0.55rem; color:#ff9238; font-family:"方正兰亭细黑_GBK"; float:left; position:relative; left:50%; height:1.5rem; }
+#result h4 strong{ color:#ff8622; font-family:"microsoft yahei"; padding-left:0.3rem;}
+#result h4 p{ float:left; border-bottom:3px double #ff9238; position:relative; right:50%;}
+#result h4 i{ font-size:0.3rem;}
+#result p.desc{ margin:0 2.1rem 0 1.6rem;  font-size:0.5rem; text-align:center; color:#d65200;}
+#result span{ display:block; font-size:0.3rem; color:#d65200;}
+#result p.tip{ font-size:0.4rem; text-align:center; color:#8e8b88;}
+#result p.way{ font-size:0.3rem; color:red; padding-bottom:0.8rem; background:url(../images/arrow.png) no-repeat bottom center; background-size:0.65rem 0.6rem; magin-bottom:2px;}
+#result p.qr_code{ width:5.5rem; height:5.5rem; margin:0 auto;}
+#result p.qr_code img{ width:100%; height:100%;}
