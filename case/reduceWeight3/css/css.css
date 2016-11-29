@@ -35,7 +35,7 @@ form ul li.button{ margin-top:1rem;}
 form ul input[type="button"]{ width:11.05rem; height:1.5rem; background:#e26213; border:1px solid #f56912; color:#fff;}
 
 #result { padding:3.5rem 0 2rem; text-align:center;}
-#result .result_info{ width:16rem; height:18rem; background:url(../images/result_bg.png) no-repeat; background-size:100% 100%;}
+#result .result_info{ width:16rem; height:16.125rem; background:url(../images/result_bg.png) no-repeat; background-size:16rem 16.125rem;}
 #result .text{ width:9.3rem; margin:0 auto; padding-top:1.5rem;}
 #result h3{ font-size:0.75rem; color:#f9002f; height:1.5rem; line-height:1.5rem;}
 #result h4{ font-size:0.55rem; color:#ff9238; font-family:"方正兰亭细黑_GBK"; float:left; position:relative; left:50%; height:1.5rem; }
